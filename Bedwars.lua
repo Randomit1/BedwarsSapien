@@ -4,15 +4,15 @@ local Combat_2 = Instance.new("TextLabel")
 local UICorner = Instance.new("UICorner")
 local UIGradient = Instance.new("UIGradient")
 local UICorner_2 = Instance.new("UICorner")
-local Speed = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local UIGradient_2 = Instance.new("UIGradient")
 local Visuals = Instance.new("Frame")
 local Visuals_2 = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
 local UICorner_4 = Instance.new("UICorner")
-local UIGradient_3 = Instance.new("UIGradient")
-local UICorner_5 = Instance.new("UICorner")
 local World = Instance.new("Frame")
+local Speed = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
 local World_2 = Instance.new("TextLabel")
 local UICorner_6 = Instance.new("UICorner")
 local UIGradient_4 = Instance.new("UIGradient")
@@ -62,25 +62,6 @@ UIGradient.Parent = Combat_2
 UICorner_2.CornerRadius = UDim.new(0, 5)
 UICorner_2.Parent = Combat
 
-Speed.Name = "Speed"
-Speed.Parent = Combat
-Speed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Speed.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Speed.BorderSizePixel = 0
-Speed.Position = UDim2.new(0.0729166642, 0, 0.030985916, 0)
-Speed.Size = UDim2.new(0, 164, 0, 50)
-Speed.Font = Enum.Font.Unknown
-Speed.Text = "Speed"
-Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
-Speed.TextScaled = true
-Speed.TextSize = 14.000
-Speed.TextWrapped = true
-
-UICorner_3.Parent = Speed
-
-UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_2.Parent = Speed
-
 Visuals.Name = "Visuals"
 Visuals.Parent = Bedwars
 Visuals.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -104,13 +85,13 @@ Visuals_2.TextScaled = true
 Visuals_2.TextSize = 14.000
 Visuals_2.TextWrapped = true
 
-UICorner_4.Parent = Visuals_2
+UICorner_3.Parent = Visuals_2
 
-UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(76, 76, 76)), ColorSequenceKeypoint.new(0.16, Color3.fromRGB(89, 89, 89)), ColorSequenceKeypoint.new(0.26, Color3.fromRGB(98, 98, 98)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(104, 104, 104)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(118, 118, 118)), ColorSequenceKeypoint.new(0.94, Color3.fromRGB(237, 237, 237)), ColorSequenceKeypoint.new(0.96, Color3.fromRGB(242, 242, 242)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_3.Parent = Visuals_2
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(76, 76, 76)), ColorSequenceKeypoint.new(0.16, Color3.fromRGB(89, 89, 89)), ColorSequenceKeypoint.new(0.26, Color3.fromRGB(98, 98, 98)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(104, 104, 104)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(118, 118, 118)), ColorSequenceKeypoint.new(0.94, Color3.fromRGB(237, 237, 237)), ColorSequenceKeypoint.new(0.96, Color3.fromRGB(242, 242, 242)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Parent = Visuals_2
 
-UICorner_5.CornerRadius = UDim.new(0, 5)
-UICorner_5.Parent = Visuals
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = Visuals
 
 World.Name = "World"
 World.Parent = Bedwars
@@ -118,8 +99,27 @@ World.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 World.BackgroundTransparency = 0.300
 World.BorderColor3 = Color3.fromRGB(0, 0, 0)
 World.BorderSizePixel = 0
-World.Position = UDim2.new(0.675378263, 0, 0.418663293, 0)
+World.Position = UDim2.new(0.678817034, 0, 0.418663293, 0)
 World.Size = UDim2.new(0, 192, 0, 355)
+
+Speed.Name = "Speed"
+Speed.Parent = World
+Speed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Speed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Speed.BorderSizePixel = 0
+Speed.Position = UDim2.new(0.063000001, 0, 0.0309999995, 0)
+Speed.Size = UDim2.new(0, 164, 0, 50)
+Speed.Font = Enum.Font.Unknown
+Speed.Text = "Speed"
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+
+UICorner_5.Parent = Speed
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_3.Parent = Speed
 
 World_2.Name = "World"
 World_2.Parent = World
@@ -148,7 +148,7 @@ InfJump.Parent = World
 InfJump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 InfJump.BorderColor3 = Color3.fromRGB(0, 0, 0)
 InfJump.BorderSizePixel = 0
-InfJump.Position = UDim2.new(0.0625, 0, 0.030985916, 0)
+InfJump.Position = UDim2.new(0.078125, 0, 0.208450705, 0)
 InfJump.Size = UDim2.new(0, 162, 0, 50)
 InfJump.Font = Enum.Font.Unknown
 InfJump.Text = "Inf Jump"
@@ -183,7 +183,7 @@ UIGradient_6.Parent = ToggleButton
 
 -- Scripts:
 
-local function FRTGRZO_fake_script() -- Combat.Draggeble 
+local function MGQACD_fake_script() -- Combat.Draggeble 
 	local script = Instance.new('LocalScript', Combat)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -226,8 +226,8 @@ local function FRTGRZO_fake_script() -- Combat.Draggeble
 	end)
 	
 end
-coroutine.wrap(FRTGRZO_fake_script)()
-local function KMBUKCX_fake_script() -- Visuals.Draggeble 
+coroutine.wrap(MGQACD_fake_script)()
+local function HJMZO_fake_script() -- Visuals.Draggeble 
 	local script = Instance.new('LocalScript', Visuals)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -270,8 +270,69 @@ local function KMBUKCX_fake_script() -- Visuals.Draggeble
 	end)
 	
 end
-coroutine.wrap(KMBUKCX_fake_script)()
-local function VNMDMB_fake_script() -- World.Draggeble 
+coroutine.wrap(HJMZO_fake_script)()
+local function WNFL_fake_script() -- Speed.LocalScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	local Players = game:GetService("Players")
+	
+	local button = script.Parent
+	local player = Players.LocalPlayer
+	
+	-- Define your speeds
+	local DEFAULT_SPEED = 16
+	local BOOST_SPEED = 23
+	
+	-- Create the thick black UI Stroke dynamically (Same logic as Inf Jump)
+	local uiStroke = Instance.new("UIStroke")
+	uiStroke.Thickness = 4 
+	uiStroke.Color = Color3.fromRGB(0, 0, 0)
+	uiStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border 
+	uiStroke.Enabled = false
+	uiStroke.Parent = button
+	
+	local isSpeedEnabled = false
+	
+	-- Function to safely find the character's humanoid
+	local function getHumanoid()
+		local character = player.Character
+		if character then
+			return character:FindFirstChildOfClass("Humanoid")
+		end
+		return nil
+	end
+	
+	-- Apply the speed whenever the character respawns/resets
+	player.CharacterAdded:Connect(function(character)
+		local humanoid = character:WaitForChild("Humanoid")
+		if isSpeedEnabled then
+			humanoid.WalkSpeed = BOOST_SPEED
+		else
+			humanoid.WalkSpeed = DEFAULT_SPEED
+		end
+	end)
+	
+	-- Handle the button click to toggle states
+	button.MouseButton1Click:Connect(function()
+		isSpeedEnabled = not isSpeedEnabled
+		local humanoid = getHumanoid()
+	
+		if isSpeedEnabled then
+			uiStroke.Enabled = true
+			if humanoid then
+				humanoid.WalkSpeed = BOOST_SPEED
+			end
+		else
+			uiStroke.Enabled = false
+			if humanoid then
+				humanoid.WalkSpeed = DEFAULT_SPEED
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(WNFL_fake_script)()
+local function AFMXRG_fake_script() -- World.Draggeble 
 	local script = Instance.new('LocalScript', World)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -314,8 +375,8 @@ local function VNMDMB_fake_script() -- World.Draggeble
 	end)
 	
 end
-coroutine.wrap(VNMDMB_fake_script)()
-local function NRMFZAZ_fake_script() -- InfJump.LocalScript 
+coroutine.wrap(AFMXRG_fake_script)()
+local function GFWM_fake_script() -- InfJump.LocalScript 
 	local script = Instance.new('LocalScript', InfJump)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -365,8 +426,8 @@ local function NRMFZAZ_fake_script() -- InfJump.LocalScript
 	end)
 	
 end
-coroutine.wrap(NRMFZAZ_fake_script)()
-local function LDIFBV_fake_script() -- ToggleButton.LocalScript 
+coroutine.wrap(GFWM_fake_script)()
+local function IGLXUJO_fake_script() -- ToggleButton.LocalScript 
 	local script = Instance.new('LocalScript', ToggleButton)
 
 	-- Place this LocalScript inside your TextButton
@@ -426,4 +487,4 @@ local function LDIFBV_fake_script() -- ToggleButton.LocalScript
 	button.MouseButton1Click:Connect(toggleMenu)
 	
 end
-coroutine.wrap(LDIFBV_fake_script)()
+coroutine.wrap(IGLXUJO_fake_script)()
