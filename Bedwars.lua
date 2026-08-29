@@ -9,20 +9,26 @@ local Visuals_2 = Instance.new("TextLabel")
 local UICorner_3 = Instance.new("UICorner")
 local UIGradient_2 = Instance.new("UIGradient")
 local UICorner_4 = Instance.new("UICorner")
-local World = Instance.new("Frame")
-local Speed = Instance.new("TextButton")
+local NameEsp = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local UIGradient_3 = Instance.new("UIGradient")
-local World_2 = Instance.new("TextLabel")
+local PlayerEsp = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local UIGradient_4 = Instance.new("UIGradient")
+local World = Instance.new("Frame")
+local Speed = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
-local InfJump = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
 local UIGradient_5 = Instance.new("UIGradient")
-local ToggleButton = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
+local World_2 = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
 local UIGradient_6 = Instance.new("UIGradient")
+local UICorner_9 = Instance.new("UICorner")
+local InfJump = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local UIGradient_7 = Instance.new("UIGradient")
+local ToggleButton = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local UIGradient_8 = Instance.new("UIGradient")
 
 --Properties:
 
@@ -93,6 +99,44 @@ UIGradient_2.Parent = Visuals_2
 UICorner_4.CornerRadius = UDim.new(0, 5)
 UICorner_4.Parent = Visuals
 
+NameEsp.Name = "NameEsp"
+NameEsp.Parent = Visuals
+NameEsp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NameEsp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NameEsp.BorderSizePixel = 0
+NameEsp.Position = UDim2.new(0.063000001, 0, 0.0309999995, 0)
+NameEsp.Size = UDim2.new(0, 164, 0, 50)
+NameEsp.Font = Enum.Font.Unknown
+NameEsp.Text = "NameEsp"
+NameEsp.TextColor3 = Color3.fromRGB(0, 0, 0)
+NameEsp.TextScaled = true
+NameEsp.TextSize = 14.000
+NameEsp.TextWrapped = true
+
+UICorner_5.Parent = NameEsp
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_3.Parent = NameEsp
+
+PlayerEsp.Name = "PlayerEsp"
+PlayerEsp.Parent = Visuals
+PlayerEsp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerEsp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerEsp.BorderSizePixel = 0
+PlayerEsp.Position = UDim2.new(0.0682083741, 0, 0.205647901, 0)
+PlayerEsp.Size = UDim2.new(0, 164, 0, 50)
+PlayerEsp.Font = Enum.Font.Unknown
+PlayerEsp.Text = "PlayerEsp"
+PlayerEsp.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlayerEsp.TextScaled = true
+PlayerEsp.TextSize = 14.000
+PlayerEsp.TextWrapped = true
+
+UICorner_6.Parent = PlayerEsp
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_4.Parent = PlayerEsp
+
 World.Name = "World"
 World.Parent = Bedwars
 World.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -116,10 +160,10 @@ Speed.TextScaled = true
 Speed.TextSize = 14.000
 Speed.TextWrapped = true
 
-UICorner_5.Parent = Speed
+UICorner_7.Parent = Speed
 
-UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_3.Parent = Speed
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_5.Parent = Speed
 
 World_2.Name = "World"
 World_2.Parent = World
@@ -135,13 +179,13 @@ World_2.TextScaled = true
 World_2.TextSize = 14.000
 World_2.TextWrapped = true
 
-UICorner_6.Parent = World_2
+UICorner_8.Parent = World_2
 
-UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(76, 76, 76)), ColorSequenceKeypoint.new(0.16, Color3.fromRGB(89, 89, 89)), ColorSequenceKeypoint.new(0.26, Color3.fromRGB(98, 98, 98)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(104, 104, 104)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(118, 118, 118)), ColorSequenceKeypoint.new(0.94, Color3.fromRGB(237, 237, 237)), ColorSequenceKeypoint.new(0.96, Color3.fromRGB(242, 242, 242)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_4.Parent = World_2
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(76, 76, 76)), ColorSequenceKeypoint.new(0.16, Color3.fromRGB(89, 89, 89)), ColorSequenceKeypoint.new(0.26, Color3.fromRGB(98, 98, 98)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(104, 104, 104)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(118, 118, 118)), ColorSequenceKeypoint.new(0.94, Color3.fromRGB(237, 237, 237)), ColorSequenceKeypoint.new(0.96, Color3.fromRGB(242, 242, 242)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_6.Parent = World_2
 
-UICorner_7.CornerRadius = UDim.new(0, 5)
-UICorner_7.Parent = World
+UICorner_9.CornerRadius = UDim.new(0, 5)
+UICorner_9.Parent = World
 
 InfJump.Name = "InfJump"
 InfJump.Parent = World
@@ -157,17 +201,17 @@ InfJump.TextScaled = true
 InfJump.TextSize = 14.000
 InfJump.TextWrapped = true
 
-UICorner_8.Parent = InfJump
+UICorner_10.Parent = InfJump
 
-UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.64, Color3.fromRGB(81, 88, 133)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_5.Parent = InfJump
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.64, Color3.fromRGB(81, 88, 133)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_7.Parent = InfJump
 
 ToggleButton.Name = "ToggleButton"
 ToggleButton.Parent = Bedwars
 ToggleButton.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
 ToggleButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ToggleButton.BorderSizePixel = 0
-ToggleButton.Position = UDim2.new(0.400275111, 0, -0.0466582589, 0)
+ToggleButton.Position = UDim2.new(0.425722152, 0, -0.0517023951, 0)
 ToggleButton.Size = UDim2.new(0, 215, 0, 56)
 ToggleButton.Font = Enum.Font.Unknown
 ToggleButton.Text = "Open"
@@ -176,14 +220,14 @@ ToggleButton.TextScaled = true
 ToggleButton.TextSize = 14.000
 ToggleButton.TextWrapped = true
 
-UICorner_9.Parent = ToggleButton
+UICorner_11.Parent = ToggleButton
 
-UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(190, 255, 175)), ColorSequenceKeypoint.new(0.08, Color3.fromRGB(192, 255, 178)), ColorSequenceKeypoint.new(0.28, Color3.fromRGB(202, 255, 190)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_6.Parent = ToggleButton
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(190, 255, 175)), ColorSequenceKeypoint.new(0.08, Color3.fromRGB(192, 255, 178)), ColorSequenceKeypoint.new(0.28, Color3.fromRGB(202, 255, 190)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_8.Parent = ToggleButton
 
 -- Scripts:
 
-local function MGQACD_fake_script() -- Combat.Draggeble 
+local function KJVN_fake_script() -- Combat.Draggeble 
 	local script = Instance.new('LocalScript', Combat)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -226,8 +270,8 @@ local function MGQACD_fake_script() -- Combat.Draggeble
 	end)
 	
 end
-coroutine.wrap(MGQACD_fake_script)()
-local function HJMZO_fake_script() -- Visuals.Draggeble 
+coroutine.wrap(KJVN_fake_script)()
+local function QPEJOJ_fake_script() -- Visuals.Draggeble 
 	local script = Instance.new('LocalScript', Visuals)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -270,8 +314,287 @@ local function HJMZO_fake_script() -- Visuals.Draggeble
 	end)
 	
 end
-coroutine.wrap(HJMZO_fake_script)()
-local function WNFL_fake_script() -- Speed.LocalScript 
+coroutine.wrap(QPEJOJ_fake_script)()
+local function DYJX_fake_script() -- NameEsp.LocalScript 
+	local script = Instance.new('LocalScript', NameEsp)
+
+	local Players = game:GetService("Players")
+	
+	local button = script.Parent
+	local player = Players.LocalPlayer
+	
+	-- Create the thick black UI Stroke dynamically (Same logic as before)
+	local uiStroke = Instance.new("UIStroke")
+	uiStroke.Thickness = 4 
+	uiStroke.Color = Color3.fromRGB(0, 0, 0)
+	uiStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border 
+	uiStroke.Enabled = false
+	uiStroke.Parent = button
+	
+	local isEspEnabled = false
+	
+	-- Function to create the text box over a player's head
+	local function createEsp(targetPlayer)
+		if targetPlayer == player then return end -- Don't put ESP on yourself
+	
+		local function setupEsp(character)
+			local head = character:WaitForChild("Head", 10)
+			if not head then return end
+	
+			-- Remove old ESP tag if it exists
+			if head:FindFirstChild("EspTag") then
+				head.EspTag:Destroy()
+			end
+	
+			-- Create a container over the head
+			local billboard = Instance.new("BillboardGui")
+			billboard.Name = "EspTag"
+			billboard.Size = UDim2.new(0, 200, 0, 50)
+			billboard.StudsOffset = Vector3.new(0, 2.5, 0) -- Renders text right above the character
+			billboard.AlwaysOnTop = true -- This makes it visible through solid walls
+			billboard.ResetOnSpawn = false
+	
+			-- Create the actual name text label
+			local textLabel = Instance.new("TextLabel")
+			textLabel.Size = UDim2.new(1, 0, 1, 0)
+			textLabel.BackgroundTransparency = 1
+			textLabel.Text = targetPlayer.Name
+			textLabel.TextColor3 = Color3.fromRGB(255, 255, 255) -- White text color
+			textLabel.TextSize = 14
+			textLabel.Font = Enum.Font.SourceSansBold
+	
+			-- Create a thin outline for the text so it's readable anywhere
+			local textStroke = Instance.new("UIStroke")
+			textStroke.Thickness = 1.5
+			textStroke.Color = Color3.fromRGB(0, 0, 0)
+			textStroke.Parent = textLabel
+	
+			textLabel.Parent = billboard
+			billboard.Parent = head
+	
+			-- Control visibility depending on toggle state
+			billboard.Enabled = isEspEnabled
+		end
+	
+		targetPlayer.CharacterAdded:Connect(setupEsp)
+		if targetPlayer.Character then
+			task.spawn(setupEsp, targetPlayer.Character)
+		end
+	end
+	
+	-- Refresh ESP visibility across the game server
+	local function toggleAllEsp(state)
+		for _, p in ipairs(Players:GetPlayers()) do
+			if p.Character and p.Character:FindFirstChild("Head") then
+				local tag = p.Character.Head:FindFirstChild("EspTag")
+				if tag then
+					tag.Enabled = state
+				end
+			end
+		end
+	end
+	
+	-- Monitor new players joining the server
+	Players.PlayerAdded:Connect(createEsp)
+	for _, p in ipairs(Players:GetPlayers()) do
+		createEsp(p)
+	end
+	
+	-- Handle the button click to toggle states
+	button.MouseButton1Click:Connect(function()
+		isEspEnabled = not isEspEnabled
+	
+		if isEspEnabled then
+			uiStroke.Enabled = true
+			toggleAllEsp(true)
+		else
+			uiStroke.Enabled = false
+			toggleAllEsp(false)
+		end
+	end)
+	
+	-- FIX: Ensures that if you reset, the ESP state handles rendering properly
+	player.CharacterAppearanceLoaded:Connect(function()
+		if isEspEnabled then
+			toggleAllEsp(true)
+		end
+	end)
+	
+end
+coroutine.wrap(DYJX_fake_script)()
+local function PGSRS_fake_script() -- PlayerEsp.LocalScript 
+	local script = Instance.new('LocalScript', PlayerEsp)
+
+	local Players = game:GetService("Players")
+	local Workspace = game:GetService("Workspace")
+	local RunService = game:GetService("RunService")
+	local GuiService = game:GetService("GuiService")
+	
+	local button = script.Parent
+	local player = Players.LocalPlayer
+	local camera = Workspace.CurrentCamera
+	
+	-- Create the thick black UI Stroke dynamically (Button Indicator)
+	local uiStroke = Instance.new("UIStroke")
+	uiStroke.Thickness = 4 
+	uiStroke.Color = Color3.fromRGB(0, 0, 0)
+	uiStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border 
+	uiStroke.Enabled = false
+	uiStroke.Parent = button
+	
+	local isBoxEspEnabled = false
+	
+	-- Calculates 2D boundaries and manually corrects the vertical layout shift
+	local function getCharacterScreenBounds(character)
+		local cframe, size = character:GetBoundingBox()
+		local halfSize = size * 0.5
+	
+		-- Track all 8 corner coordinates of the 3D bounding box model
+		local corners = {
+			cframe * Vector3.new(-halfSize.X,  halfSize.Y, -halfSize.Z),
+			cframe * Vector3.new( halfSize.X,  halfSize.Y, -halfSize.Z),
+			cframe * Vector3.new(-halfSize.X, -halfSize.Y, -halfSize.Z),
+			cframe * Vector3.new( halfSize.X, -halfSize.Y, -halfSize.Z),
+			cframe * Vector3.new(-halfSize.X,  halfSize.Y,  halfSize.Z),
+			cframe * Vector3.new( halfSize.X,  halfSize.Y,  halfSize.Z),
+			cframe * Vector3.new(-halfSize.X, -halfSize.Y,  halfSize.Z),
+			cframe * Vector3.new( halfSize.X, -halfSize.Y,  halfSize.Z),
+		}
+	
+		local minX, minY = math.huge, math.huge
+		local maxX, maxY = -math.huge, -math.huge
+		local anyOnScreen = false
+	
+		-- Fetch the exact top bar pixel height constraint dynamically
+		local topInset = GuiService:GetGuiInset().Y
+	
+		for _, corner in ipairs(corners) do
+			local screenPos, onScreen = camera:WorldToViewportPoint(corner)
+			if onScreen then
+				anyOnScreen = true
+			end
+			minX = math.min(minX, screenPos.X)
+			minY = math.min(minY, screenPos.Y - topInset) -- FIX: Manually pulls the top edge down
+			maxX = math.max(maxX, screenPos.X)
+			maxY = math.max(maxY, screenPos.Y - topInset) -- FIX: Manually pulls the bottom edge down
+		end
+	
+		return anyOnScreen, minX, minY, maxX, maxY
+	end
+	
+	-- Function to handle tracking individual players
+	local function createBoxEsp(targetPlayer)
+		if targetPlayer == player then return end -- Always skip yourself
+	
+		local function setupBox(character)
+			local storageName = "Box_" .. targetPlayer.Name
+			if player.PlayerGui:FindFirstChild(storageName) then
+				player.PlayerGui[storageName]:Destroy()
+			end
+	
+			local humanoidRootPart = character:WaitForChild("HumanoidRootPart", 10)
+			local humanoid = character:WaitForChild("Humanoid", 10)
+			if not humanoidRootPart or not humanoid then return end
+	
+			local espGui = Instance.new("ScreenGui")
+			espGui.Name = storageName
+			espGui.ResetOnSpawn = false
+			espGui.DisplayOrder = 10 
+			espGui.IgnoreGuiInset = false -- Keep synchronized with standard layout math
+			espGui.Enabled = isBoxEspEnabled
+			espGui.Parent = player.PlayerGui
+	
+			local boxFrame = Instance.new("Frame")
+			boxFrame.BackgroundTransparency = 1 
+			boxFrame.Visible = false
+			boxFrame.Parent = espGui
+	
+			local frameStroke = Instance.new("UIStroke")
+			frameStroke.Thickness = 2
+			frameStroke.Parent = boxFrame
+	
+			local uiCorner = Instance.new("UICorner")
+			uiCorner.CornerRadius = UDim.new(0, 6) 
+			uiCorner.Parent = boxFrame
+	
+			local connection
+			connection = RunService.RenderStepped:Connect(function()
+				if not targetPlayer or not targetPlayer.Parent or not character or not character.Parent or humanoid.Health <= 0 then
+					espGui:Destroy()
+					connection:Disconnect()
+					return
+				end
+	
+				-- TEAM CHECK: Hide boxes for teammates
+				if targetPlayer.Team == player.Team and player.Team ~= nil then
+					boxFrame.Visible = false
+					return
+				end
+	
+				-- DYNAMIC TEAM COLORING
+				if targetPlayer.Team then
+					frameStroke.Color = targetPlayer.TeamColor.Color
+				else
+					frameStroke.Color = Color3.fromRGB(255, 255, 255)
+				end
+	
+				if isBoxEspEnabled then
+					local onScreen, minX, minY, maxX, maxY = getCharacterScreenBounds(character)
+	
+					if onScreen then
+						local width = maxX - minX
+						local height = maxY - minY
+	
+						-- Snap the UI box frame boundary perfectly around their body geometry
+						boxFrame.Position = UDim2.new(0, minX, 0, minY)
+						boxFrame.Size = UDim2.new(0, width, 0, height)
+						boxFrame.Visible = true
+					else
+						boxFrame.Visible = false
+					end
+				else
+					boxFrame.Visible = false
+				end
+			end)
+		end
+	
+		targetPlayer.CharacterAdded:Connect(setupBox)
+		if targetPlayer.Character then
+			task.spawn(setupBox, targetPlayer.Character)
+		end
+	end
+	
+	-- Refresh visibility states instantly across the client GUI
+	local function toggleAllBoxes(state)
+		for _, p in ipairs(Players:GetPlayers()) do
+			local espGui = player.PlayerGui:FindFirstChild("Box_" .. p.Name)
+			if espGui then
+				espGui.Enabled = state
+			end
+		end
+	end
+	
+	Players.PlayerAdded:Connect(createBoxEsp)
+	for _, p in ipairs(Players:GetPlayers()) do
+		createBoxEsp(p)
+	end
+	
+	-- Handle the button click to toggle states
+	button.MouseButton1Click:Connect(function()
+		isBoxEspEnabled = not isBoxEspEnabled
+	
+		if isBoxEspEnabled then
+			uiStroke.Enabled = true
+			toggleAllBoxes(true)
+		else
+			uiStroke.Enabled = false
+			toggleAllBoxes(false)
+		end
+	end)
+	
+end
+coroutine.wrap(PGSRS_fake_script)()
+local function LFAKN_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	local Players = game:GetService("Players")
@@ -283,7 +606,7 @@ local function WNFL_fake_script() -- Speed.LocalScript
 	local DEFAULT_SPEED = 16
 	local BOOST_SPEED = 23
 	
-	-- Create the thick black UI Stroke dynamically (Same logic as Inf Jump)
+	-- Create the thick black UI Stroke dynamically
 	local uiStroke = Instance.new("UIStroke")
 	uiStroke.Thickness = 4 
 	uiStroke.Color = Color3.fromRGB(0, 0, 0)
@@ -302,15 +625,27 @@ local function WNFL_fake_script() -- Speed.LocalScript
 		return nil
 	end
 	
-	-- Apply the speed whenever the character respawns/resets
-	player.CharacterAdded:Connect(function(character)
-		local humanoid = character:WaitForChild("Humanoid")
-		if isSpeedEnabled then
-			humanoid.WalkSpeed = BOOST_SPEED
-		else
-			humanoid.WalkSpeed = DEFAULT_SPEED
-		end
-	end)
+	-- FIX: Forcibly updates speed over a short window to override Roblox defaults
+	local function applyPersistentSpeed()
+		task.spawn(function()
+			-- Loop for 2 seconds after spawning to fight off Roblox default resets
+			for i = 1, 20 do 
+				local humanoid = getHumanoid()
+				if humanoid then
+					if isSpeedEnabled then
+						humanoid.WalkSpeed = BOOST_SPEED
+					else
+						humanoid.WalkSpeed = DEFAULT_SPEED
+					end
+				end
+				task.wait(0.1) -- Check every 10th of a second
+			end
+		end)
+	end
+	
+	-- Hook up to both spawn methods to catch every reset
+	player.CharacterAdded:Connect(applyPersistentSpeed)
+	player.CharacterAppearanceLoaded:Connect(applyPersistentSpeed)
 	
 	-- Handle the button click to toggle states
 	button.MouseButton1Click:Connect(function()
@@ -331,8 +666,8 @@ local function WNFL_fake_script() -- Speed.LocalScript
 	end)
 	
 end
-coroutine.wrap(WNFL_fake_script)()
-local function AFMXRG_fake_script() -- World.Draggeble 
+coroutine.wrap(LFAKN_fake_script)()
+local function LVVFAZ_fake_script() -- World.Draggeble 
 	local script = Instance.new('LocalScript', World)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -375,8 +710,8 @@ local function AFMXRG_fake_script() -- World.Draggeble
 	end)
 	
 end
-coroutine.wrap(AFMXRG_fake_script)()
-local function GFWM_fake_script() -- InfJump.LocalScript 
+coroutine.wrap(LVVFAZ_fake_script)()
+local function JOXLIM_fake_script() -- InfJump.LocalScript 
 	local script = Instance.new('LocalScript', InfJump)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -426,8 +761,8 @@ local function GFWM_fake_script() -- InfJump.LocalScript
 	end)
 	
 end
-coroutine.wrap(GFWM_fake_script)()
-local function IGLXUJO_fake_script() -- ToggleButton.LocalScript 
+coroutine.wrap(JOXLIM_fake_script)()
+local function IPRH_fake_script() -- ToggleButton.LocalScript 
 	local script = Instance.new('LocalScript', ToggleButton)
 
 	-- Place this LocalScript inside your TextButton
@@ -487,4 +822,4 @@ local function IGLXUJO_fake_script() -- ToggleButton.LocalScript
 	button.MouseButton1Click:Connect(toggleMenu)
 	
 end
-coroutine.wrap(IGLXUJO_fake_script)()
+coroutine.wrap(IPRH_fake_script)()
