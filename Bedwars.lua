@@ -16,14 +16,14 @@ local PlayerEsp = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local UIGradient_4 = Instance.new("UIGradient")
 local World = Instance.new("Frame")
-local Speed = Instance.new("TextButton")
+local World_2 = Instance.new("TextLabel")
 local UICorner_7 = Instance.new("UICorner")
 local UIGradient_5 = Instance.new("UIGradient")
-local World_2 = Instance.new("TextLabel")
 local UICorner_8 = Instance.new("UICorner")
-local UIGradient_6 = Instance.new("UIGradient")
-local UICorner_9 = Instance.new("UICorner")
 local InfJump = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local UIGradient_6 = Instance.new("UIGradient")
+local Speed = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 local UIGradient_7 = Instance.new("UIGradient")
 local ToggleButton = Instance.new("TextButton")
@@ -146,25 +146,6 @@ World.BorderSizePixel = 0
 World.Position = UDim2.new(0.678817034, 0, 0.418663293, 0)
 World.Size = UDim2.new(0, 192, 0, 355)
 
-Speed.Name = "Speed"
-Speed.Parent = World
-Speed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Speed.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Speed.BorderSizePixel = 0
-Speed.Position = UDim2.new(0.063000001, 0, 0.0309999995, 0)
-Speed.Size = UDim2.new(0, 164, 0, 50)
-Speed.Font = Enum.Font.Unknown
-Speed.Text = "Speed"
-Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
-Speed.TextScaled = true
-Speed.TextSize = 14.000
-Speed.TextWrapped = true
-
-UICorner_7.Parent = Speed
-
-UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_5.Parent = Speed
-
 World_2.Name = "World"
 World_2.Parent = World
 World_2.BackgroundColor3 = Color3.fromRGB(58, 68, 255)
@@ -179,13 +160,13 @@ World_2.TextScaled = true
 World_2.TextSize = 14.000
 World_2.TextWrapped = true
 
-UICorner_8.Parent = World_2
+UICorner_7.Parent = World_2
 
-UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(76, 76, 76)), ColorSequenceKeypoint.new(0.16, Color3.fromRGB(89, 89, 89)), ColorSequenceKeypoint.new(0.26, Color3.fromRGB(98, 98, 98)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(104, 104, 104)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(118, 118, 118)), ColorSequenceKeypoint.new(0.94, Color3.fromRGB(237, 237, 237)), ColorSequenceKeypoint.new(0.96, Color3.fromRGB(242, 242, 242)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_6.Parent = World_2
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(76, 76, 76)), ColorSequenceKeypoint.new(0.16, Color3.fromRGB(89, 89, 89)), ColorSequenceKeypoint.new(0.26, Color3.fromRGB(98, 98, 98)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(104, 104, 104)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(118, 118, 118)), ColorSequenceKeypoint.new(0.94, Color3.fromRGB(237, 237, 237)), ColorSequenceKeypoint.new(0.96, Color3.fromRGB(242, 242, 242)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_5.Parent = World_2
 
-UICorner_9.CornerRadius = UDim.new(0, 5)
-UICorner_9.Parent = World
+UICorner_8.CornerRadius = UDim.new(0, 5)
+UICorner_8.Parent = World
 
 InfJump.Name = "InfJump"
 InfJump.Parent = World
@@ -201,10 +182,29 @@ InfJump.TextScaled = true
 InfJump.TextSize = 14.000
 InfJump.TextWrapped = true
 
-UICorner_10.Parent = InfJump
+UICorner_9.Parent = InfJump
 
-UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.64, Color3.fromRGB(81, 88, 133)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_7.Parent = InfJump
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.64, Color3.fromRGB(81, 88, 133)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_6.Parent = InfJump
+
+Speed.Name = "Speed"
+Speed.Parent = World
+Speed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Speed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Speed.BorderSizePixel = 0
+Speed.Position = UDim2.new(0.063000001, 0, 0.0309999995, 0)
+Speed.Size = UDim2.new(0, 164, 0, 50)
+Speed.Font = Enum.Font.Unknown
+Speed.Text = "Speed"
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+
+UICorner_10.Parent = Speed
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_7.Parent = Speed
 
 ToggleButton.Name = "ToggleButton"
 ToggleButton.Parent = Bedwars
@@ -227,7 +227,7 @@ UIGradient_8.Parent = ToggleButton
 
 -- Scripts:
 
-local function KJVN_fake_script() -- Combat.Draggeble 
+local function YSFW_fake_script() -- Combat.Draggeble 
 	local script = Instance.new('LocalScript', Combat)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -270,8 +270,8 @@ local function KJVN_fake_script() -- Combat.Draggeble
 	end)
 	
 end
-coroutine.wrap(KJVN_fake_script)()
-local function QPEJOJ_fake_script() -- Visuals.Draggeble 
+coroutine.wrap(YSFW_fake_script)()
+local function MWKHKV_fake_script() -- Visuals.Draggeble 
 	local script = Instance.new('LocalScript', Visuals)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -314,8 +314,8 @@ local function QPEJOJ_fake_script() -- Visuals.Draggeble
 	end)
 	
 end
-coroutine.wrap(QPEJOJ_fake_script)()
-local function DYJX_fake_script() -- NameEsp.LocalScript 
+coroutine.wrap(MWKHKV_fake_script)()
+local function HKLE_fake_script() -- NameEsp.LocalScript 
 	local script = Instance.new('LocalScript', NameEsp)
 
 	local Players = game:GetService("Players")
@@ -421,8 +421,8 @@ local function DYJX_fake_script() -- NameEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(DYJX_fake_script)()
-local function PGSRS_fake_script() -- PlayerEsp.LocalScript 
+coroutine.wrap(HKLE_fake_script)()
+local function RSNJJJ_fake_script() -- PlayerEsp.LocalScript 
 	local script = Instance.new('LocalScript', PlayerEsp)
 
 	local Players = game:GetService("Players")
@@ -593,81 +593,8 @@ local function PGSRS_fake_script() -- PlayerEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(PGSRS_fake_script)()
-local function LFAKN_fake_script() -- Speed.LocalScript 
-	local script = Instance.new('LocalScript', Speed)
-
-	local Players = game:GetService("Players")
-	
-	local button = script.Parent
-	local player = Players.LocalPlayer
-	
-	-- Define your speeds
-	local DEFAULT_SPEED = 16
-	local BOOST_SPEED = 23
-	
-	-- Create the thick black UI Stroke dynamically
-	local uiStroke = Instance.new("UIStroke")
-	uiStroke.Thickness = 4 
-	uiStroke.Color = Color3.fromRGB(0, 0, 0)
-	uiStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border 
-	uiStroke.Enabled = false
-	uiStroke.Parent = button
-	
-	local isSpeedEnabled = false
-	
-	-- Function to safely find the character's humanoid
-	local function getHumanoid()
-		local character = player.Character
-		if character then
-			return character:FindFirstChildOfClass("Humanoid")
-		end
-		return nil
-	end
-	
-	-- FIX: Forcibly updates speed over a short window to override Roblox defaults
-	local function applyPersistentSpeed()
-		task.spawn(function()
-			-- Loop for 2 seconds after spawning to fight off Roblox default resets
-			for i = 1, 20 do 
-				local humanoid = getHumanoid()
-				if humanoid then
-					if isSpeedEnabled then
-						humanoid.WalkSpeed = BOOST_SPEED
-					else
-						humanoid.WalkSpeed = DEFAULT_SPEED
-					end
-				end
-				task.wait(0.1) -- Check every 10th of a second
-			end
-		end)
-	end
-	
-	-- Hook up to both spawn methods to catch every reset
-	player.CharacterAdded:Connect(applyPersistentSpeed)
-	player.CharacterAppearanceLoaded:Connect(applyPersistentSpeed)
-	
-	-- Handle the button click to toggle states
-	button.MouseButton1Click:Connect(function()
-		isSpeedEnabled = not isSpeedEnabled
-		local humanoid = getHumanoid()
-	
-		if isSpeedEnabled then
-			uiStroke.Enabled = true
-			if humanoid then
-				humanoid.WalkSpeed = BOOST_SPEED
-			end
-		else
-			uiStroke.Enabled = false
-			if humanoid then
-				humanoid.WalkSpeed = DEFAULT_SPEED
-			end
-		end
-	end)
-	
-end
-coroutine.wrap(LFAKN_fake_script)()
-local function LVVFAZ_fake_script() -- World.Draggeble 
+coroutine.wrap(RSNJJJ_fake_script)()
+local function BGMGL_fake_script() -- World.Draggeble 
 	local script = Instance.new('LocalScript', World)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -710,8 +637,8 @@ local function LVVFAZ_fake_script() -- World.Draggeble
 	end)
 	
 end
-coroutine.wrap(LVVFAZ_fake_script)()
-local function JOXLIM_fake_script() -- InfJump.LocalScript 
+coroutine.wrap(BGMGL_fake_script)()
+local function SYKJNR_fake_script() -- InfJump.LocalScript 
 	local script = Instance.new('LocalScript', InfJump)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -761,8 +688,70 @@ local function JOXLIM_fake_script() -- InfJump.LocalScript
 	end)
 	
 end
-coroutine.wrap(JOXLIM_fake_script)()
-local function IPRH_fake_script() -- ToggleButton.LocalScript 
+coroutine.wrap(SYKJNR_fake_script)()
+local function HPGLAYL_fake_script() -- Speed.LocalScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local button = script.Parent
+	local player = Players.LocalPlayer
+	
+	-- Define your speeds
+	local DEFAULT_SPEED = 16
+	local BOOST_SPEED = 23
+	
+	-- Create the thick black UI Stroke dynamically (Button Indicator)
+	local uiStroke = Instance.new("UIStroke")
+	uiStroke.Thickness = 4 
+	uiStroke.Color = Color3.fromRGB(0, 0, 0)
+	uiStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border 
+	uiStroke.Enabled = false
+	uiStroke.Parent = button
+	
+	local isSpeedEnabled = false
+	
+	-- Function to safely find the character's humanoid
+	local function getHumanoid()
+		local character = player.Character
+		if character then
+			return character:FindFirstChildOfClass("Humanoid")
+		end
+		return nil
+	end
+	
+	-- FIX: Forces the speed to exactly 23 EVERY SINGLE FRAME to defeat active sprint scripts
+	RunService.Heartbeat:Connect(function()
+		if isSpeedEnabled then
+			local humanoid = getHumanoid()
+			if humanoid and humanoid.WalkSpeed ~= BOOST_SPEED then
+				humanoid.WalkSpeed = BOOST_SPEED
+			end
+		end
+	end)
+	
+	-- Handle the button click to toggle states
+	button.MouseButton1Click:Connect(function()
+		isSpeedEnabled = not isSpeedEnabled
+		local humanoid = getHumanoid()
+	
+		if isSpeedEnabled then
+			uiStroke.Enabled = true
+			if humanoid then
+				humanoid.WalkSpeed = BOOST_SPEED
+			end
+		else
+			uiStroke.Enabled = false
+			if humanoid then
+				humanoid.WalkSpeed = DEFAULT_SPEED
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(HPGLAYL_fake_script)()
+local function YUOCGMD_fake_script() -- ToggleButton.LocalScript 
 	local script = Instance.new('LocalScript', ToggleButton)
 
 	-- Place this LocalScript inside your TextButton
@@ -822,4 +811,4 @@ local function IPRH_fake_script() -- ToggleButton.LocalScript
 	button.MouseButton1Click:Connect(toggleMenu)
 	
 end
-coroutine.wrap(IPRH_fake_script)()
+coroutine.wrap(YUOCGMD_fake_script)()
