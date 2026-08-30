@@ -249,7 +249,7 @@ UIGradient_9.Parent = ToggleButton
 
 -- Scripts:
 
-local function CHUKHL_fake_script() -- Combat.Draggeble 
+local function NOMRK_fake_script() -- Combat.Draggeble 
 	local script = Instance.new('LocalScript', Combat)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -292,8 +292,8 @@ local function CHUKHL_fake_script() -- Combat.Draggeble
 	end)
 	
 end
-coroutine.wrap(CHUKHL_fake_script)()
-local function IEAWZK_fake_script() -- Visuals.Draggeble 
+coroutine.wrap(NOMRK_fake_script)()
+local function TMDNA_fake_script() -- Visuals.Draggeble 
 	local script = Instance.new('LocalScript', Visuals)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -336,8 +336,8 @@ local function IEAWZK_fake_script() -- Visuals.Draggeble
 	end)
 	
 end
-coroutine.wrap(IEAWZK_fake_script)()
-local function LIQGTCY_fake_script() -- NameEsp.LocalScript 
+coroutine.wrap(TMDNA_fake_script)()
+local function JEBL_fake_script() -- NameEsp.LocalScript 
 	local script = Instance.new('LocalScript', NameEsp)
 
 	local Players = game:GetService("Players")
@@ -443,8 +443,8 @@ local function LIQGTCY_fake_script() -- NameEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(LIQGTCY_fake_script)()
-local function PEBGGT_fake_script() -- PlayerEsp.LocalScript 
+coroutine.wrap(JEBL_fake_script)()
+local function GNFGIY_fake_script() -- PlayerEsp.LocalScript 
 	local script = Instance.new('LocalScript', PlayerEsp)
 
 	local Players = game:GetService("Players")
@@ -615,8 +615,8 @@ local function PEBGGT_fake_script() -- PlayerEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(PEBGGT_fake_script)()
-local function QCDNTL_fake_script() -- Graphics.LocalScript 
+coroutine.wrap(GNFGIY_fake_script)()
+local function TVBLI_fake_script() -- Graphics.LocalScript 
 	local script = Instance.new('LocalScript', Graphics)
 
 	local Lighting = game:GetService("Lighting")
@@ -741,8 +741,8 @@ local function QCDNTL_fake_script() -- Graphics.LocalScript
 	end)
 	
 end
-coroutine.wrap(QCDNTL_fake_script)()
-local function EOMFU_fake_script() -- World.Draggeble 
+coroutine.wrap(TVBLI_fake_script)()
+local function HRELWNL_fake_script() -- World.Draggeble 
 	local script = Instance.new('LocalScript', World)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -785,8 +785,8 @@ local function EOMFU_fake_script() -- World.Draggeble
 	end)
 	
 end
-coroutine.wrap(EOMFU_fake_script)()
-local function XKQN_fake_script() -- InfJump.LocalScript 
+coroutine.wrap(HRELWNL_fake_script)()
+local function KYIHIQV_fake_script() -- InfJump.LocalScript 
 	local script = Instance.new('LocalScript', InfJump)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -836,8 +836,8 @@ local function XKQN_fake_script() -- InfJump.LocalScript
 	end)
 	
 end
-coroutine.wrap(XKQN_fake_script)()
-local function SOWT_fake_script() -- Speed.LocalScript 
+coroutine.wrap(KYIHIQV_fake_script)()
+local function CVPJPM_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	local Players = game:GetService("Players")
@@ -898,8 +898,8 @@ local function SOWT_fake_script() -- Speed.LocalScript
 	end)
 	
 end
-coroutine.wrap(SOWT_fake_script)()
-local function ZVKPP_fake_script() -- ToggleButton.LocalScript 
+coroutine.wrap(CVPJPM_fake_script)()
+local function ZBPTQ_fake_script() -- ToggleButton.LocalScript 
 	local script = Instance.new('LocalScript', ToggleButton)
 
 	-- Place this LocalScript inside your TextButton
@@ -959,3 +959,4 @@ local function ZVKPP_fake_script() -- ToggleButton.LocalScript
 	button.MouseButton1Click:Connect(toggleMenu)
 	
 end
+coroutine.wrap(ZBPTQ_fake_script)()
