@@ -4,34 +4,37 @@ local Combat_2 = Instance.new("TextLabel")
 local UICorner = Instance.new("UICorner")
 local UIGradient = Instance.new("UIGradient")
 local UICorner_2 = Instance.new("UICorner")
-local Visuals = Instance.new("Frame")
-local Visuals_2 = Instance.new("TextLabel")
+local KillAura = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local UIGradient_2 = Instance.new("UIGradient")
+local Visuals = Instance.new("Frame")
+local Visuals_2 = Instance.new("TextLabel")
 local UICorner_4 = Instance.new("UICorner")
-local NameEsp = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
 local UIGradient_3 = Instance.new("UIGradient")
-local PlayerEsp = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local NameEsp = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local UIGradient_4 = Instance.new("UIGradient")
-local Graphics = Instance.new("TextButton")
+local PlayerEsp = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local UIGradient_5 = Instance.new("UIGradient")
-local World = Instance.new("Frame")
-local World_2 = Instance.new("TextLabel")
+local Graphics = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
 local UIGradient_6 = Instance.new("UIGradient")
+local World = Instance.new("Frame")
+local World_2 = Instance.new("TextLabel")
 local UICorner_9 = Instance.new("UICorner")
-local InfJump = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
 local UIGradient_7 = Instance.new("UIGradient")
-local Speed = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local InfJump = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
 local UIGradient_8 = Instance.new("UIGradient")
-local ToggleButton = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
 local UIGradient_9 = Instance.new("UIGradient")
+local ToggleButton = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local UIGradient_10 = Instance.new("UIGradient")
 
 --Properties:
 
@@ -71,6 +74,25 @@ UIGradient.Parent = Combat_2
 UICorner_2.CornerRadius = UDim.new(0, 5)
 UICorner_2.Parent = Combat
 
+KillAura.Name = "KillAura"
+KillAura.Parent = Combat
+KillAura.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KillAura.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KillAura.BorderSizePixel = 0
+KillAura.Position = UDim2.new(0.0682083741, 0, 0.0310000144, 0)
+KillAura.Size = UDim2.new(0, 164, 0, 50)
+KillAura.Font = Enum.Font.Unknown
+KillAura.Text = "KillAura"
+KillAura.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillAura.TextScaled = true
+KillAura.TextSize = 14.000
+KillAura.TextWrapped = true
+
+UICorner_3.Parent = KillAura
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Parent = KillAura
+
 Visuals.Name = "Visuals"
 Visuals.Parent = Bedwars
 Visuals.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -94,13 +116,13 @@ Visuals_2.TextScaled = true
 Visuals_2.TextSize = 14.000
 Visuals_2.TextWrapped = true
 
-UICorner_3.Parent = Visuals_2
+UICorner_4.Parent = Visuals_2
 
-UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(76, 76, 76)), ColorSequenceKeypoint.new(0.16, Color3.fromRGB(89, 89, 89)), ColorSequenceKeypoint.new(0.26, Color3.fromRGB(98, 98, 98)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(104, 104, 104)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(118, 118, 118)), ColorSequenceKeypoint.new(0.94, Color3.fromRGB(237, 237, 237)), ColorSequenceKeypoint.new(0.96, Color3.fromRGB(242, 242, 242)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_2.Parent = Visuals_2
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(76, 76, 76)), ColorSequenceKeypoint.new(0.16, Color3.fromRGB(89, 89, 89)), ColorSequenceKeypoint.new(0.26, Color3.fromRGB(98, 98, 98)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(104, 104, 104)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(118, 118, 118)), ColorSequenceKeypoint.new(0.94, Color3.fromRGB(237, 237, 237)), ColorSequenceKeypoint.new(0.96, Color3.fromRGB(242, 242, 242)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_3.Parent = Visuals_2
 
-UICorner_4.CornerRadius = UDim.new(0, 5)
-UICorner_4.Parent = Visuals
+UICorner_5.CornerRadius = UDim.new(0, 5)
+UICorner_5.Parent = Visuals
 
 NameEsp.Name = "NameEsp"
 NameEsp.Parent = Visuals
@@ -116,10 +138,10 @@ NameEsp.TextScaled = true
 NameEsp.TextSize = 14.000
 NameEsp.TextWrapped = true
 
-UICorner_5.Parent = NameEsp
+UICorner_6.Parent = NameEsp
 
-UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_3.Parent = NameEsp
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_4.Parent = NameEsp
 
 PlayerEsp.Name = "PlayerEsp"
 PlayerEsp.Parent = Visuals
@@ -135,10 +157,10 @@ PlayerEsp.TextScaled = true
 PlayerEsp.TextSize = 14.000
 PlayerEsp.TextWrapped = true
 
-UICorner_6.Parent = PlayerEsp
+UICorner_7.Parent = PlayerEsp
 
-UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_4.Parent = PlayerEsp
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_5.Parent = PlayerEsp
 
 Graphics.Name = "Graphics"
 Graphics.Parent = Visuals
@@ -154,10 +176,10 @@ Graphics.TextScaled = true
 Graphics.TextSize = 14.000
 Graphics.TextWrapped = true
 
-UICorner_7.Parent = Graphics
+UICorner_8.Parent = Graphics
 
-UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_5.Parent = Graphics
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_6.Parent = Graphics
 
 World.Name = "World"
 World.Parent = Bedwars
@@ -182,13 +204,13 @@ World_2.TextScaled = true
 World_2.TextSize = 14.000
 World_2.TextWrapped = true
 
-UICorner_8.Parent = World_2
+UICorner_9.Parent = World_2
 
-UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(76, 76, 76)), ColorSequenceKeypoint.new(0.16, Color3.fromRGB(89, 89, 89)), ColorSequenceKeypoint.new(0.26, Color3.fromRGB(98, 98, 98)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(104, 104, 104)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(118, 118, 118)), ColorSequenceKeypoint.new(0.94, Color3.fromRGB(237, 237, 237)), ColorSequenceKeypoint.new(0.96, Color3.fromRGB(242, 242, 242)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_6.Parent = World_2
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(76, 76, 76)), ColorSequenceKeypoint.new(0.16, Color3.fromRGB(89, 89, 89)), ColorSequenceKeypoint.new(0.26, Color3.fromRGB(98, 98, 98)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(104, 104, 104)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(118, 118, 118)), ColorSequenceKeypoint.new(0.94, Color3.fromRGB(237, 237, 237)), ColorSequenceKeypoint.new(0.96, Color3.fromRGB(242, 242, 242)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_7.Parent = World_2
 
-UICorner_9.CornerRadius = UDim.new(0, 5)
-UICorner_9.Parent = World
+UICorner_10.CornerRadius = UDim.new(0, 5)
+UICorner_10.Parent = World
 
 InfJump.Name = "InfJump"
 InfJump.Parent = World
@@ -204,10 +226,10 @@ InfJump.TextScaled = true
 InfJump.TextSize = 14.000
 InfJump.TextWrapped = true
 
-UICorner_10.Parent = InfJump
+UICorner_11.Parent = InfJump
 
-UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.64, Color3.fromRGB(81, 88, 133)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_7.Parent = InfJump
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.64, Color3.fromRGB(81, 88, 133)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_8.Parent = InfJump
 
 Speed.Name = "Speed"
 Speed.Parent = World
@@ -223,10 +245,10 @@ Speed.TextScaled = true
 Speed.TextSize = 14.000
 Speed.TextWrapped = true
 
-UICorner_11.Parent = Speed
+UICorner_12.Parent = Speed
 
-UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_8.Parent = Speed
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_9.Parent = Speed
 
 ToggleButton.Name = "ToggleButton"
 ToggleButton.Parent = Bedwars
@@ -242,14 +264,14 @@ ToggleButton.TextScaled = true
 ToggleButton.TextSize = 14.000
 ToggleButton.TextWrapped = true
 
-UICorner_12.Parent = ToggleButton
+UICorner_13.Parent = ToggleButton
 
-UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(190, 255, 175)), ColorSequenceKeypoint.new(0.08, Color3.fromRGB(192, 255, 178)), ColorSequenceKeypoint.new(0.28, Color3.fromRGB(202, 255, 190)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_9.Parent = ToggleButton
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(190, 255, 175)), ColorSequenceKeypoint.new(0.08, Color3.fromRGB(192, 255, 178)), ColorSequenceKeypoint.new(0.28, Color3.fromRGB(202, 255, 190)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_10.Parent = ToggleButton
 
 -- Scripts:
 
-local function NOMRK_fake_script() -- Combat.Draggeble 
+local function JUAEL_fake_script() -- Combat.Draggeble 
 	local script = Instance.new('LocalScript', Combat)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -292,8 +314,148 @@ local function NOMRK_fake_script() -- Combat.Draggeble
 	end)
 	
 end
-coroutine.wrap(NOMRK_fake_script)()
-local function TMDNA_fake_script() -- Visuals.Draggeble 
+coroutine.wrap(JUAEL_fake_script)()
+local function OOJE_fake_script() -- KillAura.LocalScript 
+	local script = Instance.new('LocalScript', KillAura)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+	local button = script.Parent
+	local LocalPlayer = Players.LocalPlayer
+	
+	-- Fetch the network attack remote location securely
+	local attackRemote = ReplicatedStorage:WaitForChild("rbxts_include", 10)
+		:WaitForChild("node_modules", 10)
+		:WaitForChild("@rbxts", 10)
+		:WaitForChild("net", 10)
+		:WaitForChild("out", 10)
+		:WaitForChild("_NetManaged", 10)
+		:WaitForChild("SwordHit", 10)
+	
+	-- Config parameters matching your original architecture
+	local RADIUS = 30
+	local timesExecuted = 5 -- Attacks per second
+	
+	-- Create the thick black UI Stroke dynamically (Button Indicator)
+	local uiStroke = Instance.new("UIStroke")
+	uiStroke.Thickness = 4 
+	uiStroke.Color = Color3.fromRGB(0, 0, 0)
+	uiStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border 
+	uiStroke.Enabled = false
+	uiStroke.Parent = button
+	
+	local isKillAuraEnabled = false
+	local auraConnection = nil
+	local elapsed = 0
+	
+	-- Helper function to track currently active inventory sword designations
+	local function getSwordEquipedName()
+		if not LocalPlayer.Character then return nil end
+		for _, item in ipairs(LocalPlayer.Character:GetChildren()) do
+			if string.find(string.lower(item.Name), "sword") then 
+				return item.Name 
+			end
+		end 
+		return nil
+	end
+	
+	-- Attack handler structure feeding core engine remotes
+	local function attack(player)
+		local weaponName = getSwordEquipedName()
+		if not weaponName then return end -- Skip attack if no sword is physically held
+	
+		local targetCharacter = player.Character
+		local ownCharacter = LocalPlayer.Character
+		if not targetCharacter or not ownCharacter then return end
+	
+		local targetRoot = targetCharacter:FindFirstChild("HumanoidRootPart")
+		local ownRoot = ownCharacter:FindFirstChild("HumanoidRootPart")
+		if not targetRoot or not ownRoot then return end
+	
+		-- Fire replication data structure to server network structures
+		pcall(function()
+			attackRemote:FireServer({
+				chargedAttack = {
+					chargeRatio = 0
+				},
+				entityInstance = targetCharacter,
+				validate = {
+					selfPosition = {
+						value = ownRoot.Position
+					},
+					targetPosition = {
+						value = targetRoot.Position
+					}
+				},
+				weapon = ReplicatedStorage:WaitForChild("Inventories"):WaitForChild(LocalPlayer.Name):WaitForChild(weaponName)
+			})
+		end)
+	end
+	
+	-- Clear old running threads to completely avoid double loop bugs
+	local function stopKillAura()
+		if auraConnection then
+			auraConnection:Disconnect()
+			auraConnection = nil
+		end
+	end
+	
+	-- Main processing aura runtime handler loop logic
+	local function startKillAura()
+		stopKillAura() -- Prevent stacking instances
+		elapsed = 0
+	
+		auraConnection = RunService.Heartbeat:Connect(function(dt)
+			if not isKillAuraEnabled or timesExecuted <= 0 then return end
+	
+			elapsed += dt
+			local interval = 1 / timesExecuted
+			if elapsed < interval then return end
+			elapsed %= interval
+	
+			local character = LocalPlayer.Character
+			local rootPart = character and character:FindFirstChild("HumanoidRootPart")
+			if not rootPart then return end
+	
+			for _, player in ipairs(Players:GetPlayers()) do
+				-- Team structural scanning validation filters
+				local ownTeam = LocalPlayer.Team
+				local enemyTeam = player.Team
+	
+				if (player ~= LocalPlayer) and (ownTeam ~= enemyTeam or ownTeam == nil) then
+					local otherCharacter = player.Character
+					local otherRoot = otherCharacter and otherCharacter:FindFirstChild("HumanoidRootPart")
+					local otherHumanoid = otherCharacter and otherCharacter:FindFirstChildOfClass("Humanoid")
+	
+					if otherRoot and otherHumanoid and otherHumanoid.Health > 0 then
+						local distance = (rootPart.Position - otherRoot.Position).Magnitude
+						if distance <= RADIUS then
+							attack(player)
+						end
+					end
+				end
+			end
+		end)
+	end
+	
+	-- Handle the button click to toggle states
+	button.MouseButton1Click:Connect(function()
+		isKillAuraEnabled = not isKillAuraEnabled
+	
+		if isKillAuraEnabled then
+			uiStroke.Enabled = true
+			startKillAura()
+		else
+			uiStroke.Enabled = false
+			stopKillAura()
+		end
+	end)
+	
+end
+coroutine.wrap(OOJE_fake_script)()
+local function FYJQA_fake_script() -- Visuals.Draggeble 
 	local script = Instance.new('LocalScript', Visuals)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -336,8 +498,8 @@ local function TMDNA_fake_script() -- Visuals.Draggeble
 	end)
 	
 end
-coroutine.wrap(TMDNA_fake_script)()
-local function JEBL_fake_script() -- NameEsp.LocalScript 
+coroutine.wrap(FYJQA_fake_script)()
+local function NQXYAU_fake_script() -- NameEsp.LocalScript 
 	local script = Instance.new('LocalScript', NameEsp)
 
 	local Players = game:GetService("Players")
@@ -443,8 +605,8 @@ local function JEBL_fake_script() -- NameEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(JEBL_fake_script)()
-local function GNFGIY_fake_script() -- PlayerEsp.LocalScript 
+coroutine.wrap(NQXYAU_fake_script)()
+local function QIYO_fake_script() -- PlayerEsp.LocalScript 
 	local script = Instance.new('LocalScript', PlayerEsp)
 
 	local Players = game:GetService("Players")
@@ -615,8 +777,8 @@ local function GNFGIY_fake_script() -- PlayerEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(GNFGIY_fake_script)()
-local function TVBLI_fake_script() -- Graphics.LocalScript 
+coroutine.wrap(QIYO_fake_script)()
+local function UUDLI_fake_script() -- Graphics.LocalScript 
 	local script = Instance.new('LocalScript', Graphics)
 
 	local Lighting = game:GetService("Lighting")
@@ -741,8 +903,8 @@ local function TVBLI_fake_script() -- Graphics.LocalScript
 	end)
 	
 end
-coroutine.wrap(TVBLI_fake_script)()
-local function HRELWNL_fake_script() -- World.Draggeble 
+coroutine.wrap(UUDLI_fake_script)()
+local function NHNRE_fake_script() -- World.Draggable 
 	local script = Instance.new('LocalScript', World)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -785,8 +947,8 @@ local function HRELWNL_fake_script() -- World.Draggeble
 	end)
 	
 end
-coroutine.wrap(HRELWNL_fake_script)()
-local function KYIHIQV_fake_script() -- InfJump.LocalScript 
+coroutine.wrap(NHNRE_fake_script)()
+local function PLNTS_fake_script() -- InfJump.LocalScript 
 	local script = Instance.new('LocalScript', InfJump)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -836,8 +998,8 @@ local function KYIHIQV_fake_script() -- InfJump.LocalScript
 	end)
 	
 end
-coroutine.wrap(KYIHIQV_fake_script)()
-local function CVPJPM_fake_script() -- Speed.LocalScript 
+coroutine.wrap(PLNTS_fake_script)()
+local function VLFIJM_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	local Players = game:GetService("Players")
@@ -898,8 +1060,8 @@ local function CVPJPM_fake_script() -- Speed.LocalScript
 	end)
 	
 end
-coroutine.wrap(CVPJPM_fake_script)()
-local function ZBPTQ_fake_script() -- ToggleButton.LocalScript 
+coroutine.wrap(VLFIJM_fake_script)()
+local function UECM_fake_script() -- ToggleButton.LocalScript 
 	local script = Instance.new('LocalScript', ToggleButton)
 
 	-- Place this LocalScript inside your TextButton
@@ -959,4 +1121,4 @@ local function ZBPTQ_fake_script() -- ToggleButton.LocalScript
 	button.MouseButton1Click:Connect(toggleMenu)
 	
 end
-coroutine.wrap(ZBPTQ_fake_script)()
+coroutine.wrap(UECM_fake_script)()
