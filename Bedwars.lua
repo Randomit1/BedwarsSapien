@@ -293,7 +293,7 @@ UIGradient_11.Parent = ToggleButton
 
 -- Scripts:
 
-local function CWSPZ_fake_script() -- Combat.Draggeble 
+local function OCHIS_fake_script() -- Combat.Draggeble 
 	local script = Instance.new('LocalScript', Combat)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -336,8 +336,8 @@ local function CWSPZ_fake_script() -- Combat.Draggeble
 	end)
 	
 end
-coroutine.wrap(CWSPZ_fake_script)()
-local function PSNA_fake_script() -- KillAura.LocalScript 
+coroutine.wrap(OCHIS_fake_script)()
+local function HYADZSD_fake_script() -- KillAura.LocalScript 
 	local script = Instance.new('LocalScript', KillAura)
 
 	local Players = game:GetService("Players")
@@ -476,8 +476,8 @@ local function PSNA_fake_script() -- KillAura.LocalScript
 	end)
 	
 end
-coroutine.wrap(PSNA_fake_script)()
-local function ARFYZY_fake_script() -- Visuals.Draggeble 
+coroutine.wrap(HYADZSD_fake_script)()
+local function GJFF_fake_script() -- Visuals.Draggeble 
 	local script = Instance.new('LocalScript', Visuals)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -520,8 +520,8 @@ local function ARFYZY_fake_script() -- Visuals.Draggeble
 	end)
 	
 end
-coroutine.wrap(ARFYZY_fake_script)()
-local function DYNEOT_fake_script() -- NameEsp.LocalScript 
+coroutine.wrap(GJFF_fake_script)()
+local function UKFP_fake_script() -- NameEsp.LocalScript 
 	local script = Instance.new('LocalScript', NameEsp)
 
 	local Players = game:GetService("Players")
@@ -627,8 +627,8 @@ local function DYNEOT_fake_script() -- NameEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(DYNEOT_fake_script)()
-local function FHUPZRV_fake_script() -- PlayerEsp.LocalScript 
+coroutine.wrap(UKFP_fake_script)()
+local function ZTSGBTE_fake_script() -- PlayerEsp.LocalScript 
 	local script = Instance.new('LocalScript', PlayerEsp)
 
 	local Players = game:GetService("Players")
@@ -799,8 +799,8 @@ local function FHUPZRV_fake_script() -- PlayerEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(FHUPZRV_fake_script)()
-local function BOFBMV_fake_script() -- Graphics.LocalScript 
+coroutine.wrap(ZTSGBTE_fake_script)()
+local function UACRYN_fake_script() -- Graphics.LocalScript 
 	local script = Instance.new('LocalScript', Graphics)
 
 	local Lighting = game:GetService("Lighting")
@@ -925,12 +925,12 @@ local function BOFBMV_fake_script() -- Graphics.LocalScript
 	end)
 	
 end
-coroutine.wrap(BOFBMV_fake_script)()
-local function JBKBDUR_fake_script() -- UltraFpsBoost.LocalScript 
+coroutine.wrap(UACRYN_fake_script)()
+local function JBDIIW_fake_script() -- UltraFpsBoost.LocalScript 
 	local script = Instance.new('LocalScript', UltraFpsBoost)
 
-	local Lighting = game:GetService("Lighting")
 	local Workspace = game:GetService("Workspace")
+	local Lighting = game:GetService("Lighting")
 	
 	local button = script.Parent
 	
@@ -942,7 +942,7 @@ local function JBKBDUR_fake_script() -- UltraFpsBoost.LocalScript
 	uiStroke.Enabled = false
 	uiStroke.Parent = button
 	
-	local isFpsBoosterEnabled = false
+	local isUltraPerformanceEnabled = false
 	local workspaceConnection = nil
 	local originalProperties = {} -- Stores original map properties to restore them later
 	
@@ -956,28 +956,48 @@ local function JBKBDUR_fake_script() -- UltraFpsBoost.LocalScript
 		end
 	end
 	
-	-- Process objects depending on the current toggle state
-	local function handleOptimization(obj)
+	-- Precision Color-Extraction & Flattening Logic
+	local function flattenKeepExactColor(obj)
 		if not obj or not obj.Parent then return end
 	
-		if isFpsBoosterEnabled then
+		if isUltraPerformanceEnabled then
 			-- --- OPTIMIZATIONS ACTIVE (ON STATE) ---
 			if obj:IsA("Decal") or obj:IsA("Texture") then
 				saveOriginalProperty(obj, "Transparency", obj.Transparency)
-				obj.Transparency = 1 -- Hide textures to maximize engine processing frames
+				obj.Transparency = 1 
 			elseif obj:IsA("ParticleEmitter") or obj:IsA("Trail") or obj:IsA("Smoke") or obj:IsA("Sparkles") or obj:IsA("Fire") then
 				saveOriginalProperty(obj, "Enabled", obj.Enabled)
 				obj.Enabled = false
 			elseif obj:IsA("MeshPart") then
 				saveOriginalProperty(obj, "RenderFidelity", obj.RenderFidelity)
 				saveOriginalProperty(obj, "CollisionFidelity", obj.CollisionFidelity)
+				saveOriginalProperty(obj, "CastShadow", obj.CastShadow)
+				saveOriginalProperty(obj, "TextureID", obj.TextureID)
+	
 				obj.RenderFidelity = Enum.RenderFidelity.Performance
 				obj.CollisionFidelity = Enum.CollisionFidelity.Box
+				obj.CastShadow = false
+	
+				if obj.TextureID ~= "" then
+					if obj.Color == Color3.fromRGB(255, 255, 255) and obj:FindFirstChildOfClass("SpecialMesh") then
+						local sm = obj:FindFirstChildOfClass("SpecialMesh")
+						saveOriginalProperty(sm, "TextureId", sm.TextureId)
+						sm.TextureId = ""
+					else
+						obj.TextureID = "" 
+					end
+				end
 			elseif obj:IsA("BasePart") and not obj:IsA("MeshPart") then
 				saveOriginalProperty(obj, "Material", obj.Material)
 				saveOriginalProperty(obj, "Reflectance", obj.Reflectance)
-				obj.Material = Enum.Material.SmoothPlastic
+				saveOriginalProperty(obj, "CastShadow", obj.CastShadow)
+				saveOriginalProperty(obj, "Color", obj.Color)
+	
+				local exactColor = obj.Color 
+				obj.Material = Enum.Material.SmoothPlastic 
 				obj.Reflectance = 0
+				obj.CastShadow = false 
+				obj.Color = exactColor 
 			end
 		else
 			-- --- RESTORE MAP GRAPHICS (OFF STATE) ---
@@ -992,52 +1012,45 @@ local function JBKBDUR_fake_script() -- UltraFpsBoost.LocalScript
 		end
 	end
 	
-	-- Turn ON the optimization process
-	local function activateFpsBooster()
-		if setfpscap then setfpscap(9999) end -- Uncap frame lock limits
-	
-		-- Optimize global environment settings
+	-- Turn ON the Ultra Performance process
+	local function activateOptimizer()
+		-- Global Shadow & Lighting Overhead Stripper
 		saveOriginalProperty(Lighting, "GlobalShadows", Lighting.GlobalShadows)
 		saveOriginalProperty(Lighting, "FogEnd", Lighting.FogEnd)
 		saveOriginalProperty(Lighting, "Brightness", Lighting.Brightness)
+		saveOriginalProperty(settings().Rendering, "QualityLevel", settings().Rendering.QualityLevel)
 	
 		Lighting.GlobalShadows = false
 		Lighting.FogEnd = 9e9
 		Lighting.Brightness = 1
+		settings().Rendering.QualityLevel = Enum.QualityLevel.Level01
 	
-		for _, effect in pairs(Lighting:GetChildren()) do
+		-- Erase screen post-processing effects
+		for _, effect in ipairs(Lighting:GetChildren()) do
 			if effect:IsA("PostEffect") or effect:IsA("BloomEffect") or effect:IsA("BlurEffect") or effect:IsA("DepthOfFieldEffect") or effect:IsA("SunRaysEffect") then
 				saveOriginalProperty(effect, "Enabled", effect.Enabled)
 				effect.Enabled = false
 			end
 		end
 	
-		local Terrain = Workspace:FindFirstChildOfClass("Terrain")
-		if Terrain then
-			saveOriginalProperty(Terrain, "WaterWaveSize", Terrain.WaterWaveSize)
-			saveOriginalProperty(Terrain, "WaterWaveSpeed", Terrain.WaterWaveSpeed)
-			saveOriginalProperty(Terrain, "WaterReflectance", Terrain.WaterReflectance)
-			saveOriginalProperty(Terrain, "WaterTransparency", Terrain.WaterTransparency)
-	
-			Terrain.WaterWaveSize = 0
-			Terrain.WaterWaveSpeed = 0
-			Terrain.WaterReflectance = 0
-			Terrain.WaterTransparency = 0
-		end
-	
-		-- Apply optimization loop to everything currently in the game workspace
-		for _, desc in pairs(Workspace:GetDescendants()) do
-			handleOptimization(desc)
-		end
-	
-		-- Stream monitor incoming blocks, items, or visual projectiles dynamically
-		workspaceConnection = Workspace.DescendantAdded:Connect(function(desc)
-			handleOptimization(desc)
+		-- Stable Sequential Thread Loop (Protects Memory)
+		task.spawn(function()
+			local descendants = Workspace:GetDescendants()
+			for i = 1, #descendants do
+				if not isUltraPerformanceEnabled then break end -- Stop process if turned off mid-loop
+				flattenKeepExactColor(descendants[i])
+				if i % 300 == 0 then 
+					task.wait() 
+				end
+			end
 		end)
+	
+		-- Automatically monitor new incoming map blocks, armor pieces, or map structures
+		workspaceConnection = Workspace.DescendantAdded:Connect(flattenKeepExactColor)
 	end
 	
-	-- Turn OFF optimization and clean memory states
-	local function deactivateFpsBooster()
+	-- Turn OFF optimization and clean cache memory state profiles
+	local function deactivateOptimizer()
 		if workspaceConnection then
 			workspaceConnection:Disconnect()
 			workspaceConnection = nil
@@ -1051,44 +1064,44 @@ local function JBKBDUR_fake_script() -- UltraFpsBoost.LocalScript
 			end
 		end
 	
-		for _, effect in pairs(Lighting:GetChildren()) do
+		pcall(function()
+			if originalProperties[settings().Rendering] and originalProperties[settings().Rendering]["QualityLevel"] then
+				settings().Rendering.QualityLevel = originalProperties[settings().Rendering]["QualityLevel"]
+			end
+		end)
+	
+		for _, effect in ipairs(Lighting:GetChildren()) do
 			local savedEffect = originalProperties[effect]
 			if savedEffect and savedEffect["Enabled"] ~= nil then
 				effect.Enabled = savedEffect["Enabled"]
 			end
 		end
 	
-		local Terrain = Workspace:FindFirstChildOfClass("Terrain")
-		if Terrain and originalProperties[Terrain] then
-			for propName, val in pairs(originalProperties[Terrain]) do
-				Terrain[propName] = val
-			end
+		-- Restore materials and textures across the maps tree structure
+		local descendants = Workspace:GetDescendants()
+		for i = 1, #descendants do
+			flattenKeepExactColor(descendants[i])
 		end
 	
-		-- Restore texture models back across the workspace tree map structure
-		for _, desc in pairs(Workspace:GetDescendants()) do
-			handleOptimization(desc)
-		end
-	
-		table.clear(originalProperties) -- Empty cache memory states clean
+		table.clear(originalProperties) -- Wipe out local cache cleanly
 	end
 	
 	-- Handle the button click to toggle states
 	button.MouseButton1Click:Connect(function()
-		isFpsBoosterEnabled = not isFpsBoosterEnabled
+		isUltraPerformanceEnabled = not isUltraPerformanceEnabled
 	
-		if isFpsBoosterEnabled then
+		if isUltraPerformanceEnabled then
 			uiStroke.Enabled = true
-			activateFpsBooster()
+			activateOptimizer()
 		else
 			uiStroke.Enabled = false
-			deactivateFpsBooster()
+			deactivateOptimizer()
 		end
 	end)
 	
 end
-coroutine.wrap(JBKBDUR_fake_script)()
-local function WOOC_fake_script() -- World.Draggable 
+coroutine.wrap(JBDIIW_fake_script)()
+local function PBJI_fake_script() -- World.Draggable 
 	local script = Instance.new('LocalScript', World)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1131,8 +1144,8 @@ local function WOOC_fake_script() -- World.Draggable
 	end)
 	
 end
-coroutine.wrap(WOOC_fake_script)()
-local function XHLIJSO_fake_script() -- InfJump.LocalScript 
+coroutine.wrap(PBJI_fake_script)()
+local function AGTIRN_fake_script() -- InfJump.LocalScript 
 	local script = Instance.new('LocalScript', InfJump)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1182,8 +1195,8 @@ local function XHLIJSO_fake_script() -- InfJump.LocalScript
 	end)
 	
 end
-coroutine.wrap(XHLIJSO_fake_script)()
-local function FVVHD_fake_script() -- Speed.LocalScript 
+coroutine.wrap(AGTIRN_fake_script)()
+local function GXUVD_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	local Players = game:GetService("Players")
@@ -1244,8 +1257,8 @@ local function FVVHD_fake_script() -- Speed.LocalScript
 	end)
 	
 end
-coroutine.wrap(FVVHD_fake_script)()
-local function BZMI_fake_script() -- ToggleButton.LocalScript 
+coroutine.wrap(GXUVD_fake_script)()
+local function XTLPRP_fake_script() -- ToggleButton.LocalScript 
 	local script = Instance.new('LocalScript', ToggleButton)
 
 	-- Place this LocalScript inside your TextButton
@@ -1305,4 +1318,4 @@ local function BZMI_fake_script() -- ToggleButton.LocalScript
 	button.MouseButton1Click:Connect(toggleMenu)
 	
 end
-coroutine.wrap(BZMI_fake_script)()
+coroutine.wrap(XTLPRP_fake_script)()
