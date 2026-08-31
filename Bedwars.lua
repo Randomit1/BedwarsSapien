@@ -38,6 +38,8 @@ local UIGradient_10 = Instance.new("UIGradient")
 local ToggleButton = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
 local UIGradient_11 = Instance.new("UIGradient")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
 
 --Properties:
 
@@ -278,7 +280,7 @@ ToggleButton.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
 ToggleButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ToggleButton.BorderSizePixel = 0
 ToggleButton.Position = UDim2.new(0.425722152, 0, -0.0517023951, 0)
-ToggleButton.Size = UDim2.new(0, 215, 0, 56)
+ToggleButton.Size = UDim2.new(0.147867948, 0, 0.0706179067, 0)
 ToggleButton.Font = Enum.Font.Unknown
 ToggleButton.Text = "Open"
 ToggleButton.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -291,9 +293,15 @@ UICorner_14.Parent = ToggleButton
 UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(190, 255, 175)), ColorSequenceKeypoint.new(0.08, Color3.fromRGB(192, 255, 178)), ColorSequenceKeypoint.new(0.28, Color3.fromRGB(202, 255, 190)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_11.Parent = ToggleButton
 
+UIAspectRatioConstraint.Parent = ToggleButton
+UIAspectRatioConstraint.AspectRatio = 3.839
+
+UITextSizeConstraint.Parent = ToggleButton
+UITextSizeConstraint.MaxTextSize = 56
+
 -- Scripts:
 
-local function OCHIS_fake_script() -- Combat.Draggeble 
+local function SDIEIS_fake_script() -- Combat.Draggeble 
 	local script = Instance.new('LocalScript', Combat)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -336,8 +344,8 @@ local function OCHIS_fake_script() -- Combat.Draggeble
 	end)
 	
 end
-coroutine.wrap(OCHIS_fake_script)()
-local function HYADZSD_fake_script() -- KillAura.LocalScript 
+coroutine.wrap(SDIEIS_fake_script)()
+local function FLWBO_fake_script() -- KillAura.LocalScript 
 	local script = Instance.new('LocalScript', KillAura)
 
 	local Players = game:GetService("Players")
@@ -356,9 +364,9 @@ local function HYADZSD_fake_script() -- KillAura.LocalScript
 		:WaitForChild("_NetManaged", 10)
 		:WaitForChild("SwordHit", 10)
 	
-	-- Config parameters matching your original architecture
-	local RADIUS = 30
-	local timesExecuted = 5 -- Attacks per second
+	-- Config parameters matching your 35-stud architecture
+	local RADIUS = 35
+	local timesExecuted = 8 -- Attacks per second
 	
 	-- Create the thick black UI Stroke dynamically (Button Indicator)
 	local uiStroke = Instance.new("UIStroke")
@@ -442,7 +450,7 @@ local function HYADZSD_fake_script() -- KillAura.LocalScript
 			if not rootPart then return end
 	
 			for _, player in ipairs(Players:GetPlayers()) do
-				-- Team structural scanning validation filters
+				-- Team structural scanning validation filters (Case-sensitive fixes applied)
 				local ownTeam = LocalPlayer.Team
 				local enemyTeam = player.Team
 	
@@ -476,8 +484,8 @@ local function HYADZSD_fake_script() -- KillAura.LocalScript
 	end)
 	
 end
-coroutine.wrap(HYADZSD_fake_script)()
-local function GJFF_fake_script() -- Visuals.Draggeble 
+coroutine.wrap(FLWBO_fake_script)()
+local function LDBM_fake_script() -- Visuals.Draggeble 
 	local script = Instance.new('LocalScript', Visuals)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -520,8 +528,8 @@ local function GJFF_fake_script() -- Visuals.Draggeble
 	end)
 	
 end
-coroutine.wrap(GJFF_fake_script)()
-local function UKFP_fake_script() -- NameEsp.LocalScript 
+coroutine.wrap(LDBM_fake_script)()
+local function YDMCFS_fake_script() -- NameEsp.LocalScript 
 	local script = Instance.new('LocalScript', NameEsp)
 
 	local Players = game:GetService("Players")
@@ -627,8 +635,8 @@ local function UKFP_fake_script() -- NameEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(UKFP_fake_script)()
-local function ZTSGBTE_fake_script() -- PlayerEsp.LocalScript 
+coroutine.wrap(YDMCFS_fake_script)()
+local function RSQR_fake_script() -- PlayerEsp.LocalScript 
 	local script = Instance.new('LocalScript', PlayerEsp)
 
 	local Players = game:GetService("Players")
@@ -799,8 +807,8 @@ local function ZTSGBTE_fake_script() -- PlayerEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZTSGBTE_fake_script)()
-local function UACRYN_fake_script() -- Graphics.LocalScript 
+coroutine.wrap(RSQR_fake_script)()
+local function HAFIX_fake_script() -- Graphics.LocalScript 
 	local script = Instance.new('LocalScript', Graphics)
 
 	local Lighting = game:GetService("Lighting")
@@ -925,8 +933,8 @@ local function UACRYN_fake_script() -- Graphics.LocalScript
 	end)
 	
 end
-coroutine.wrap(UACRYN_fake_script)()
-local function JBDIIW_fake_script() -- UltraFpsBoost.LocalScript 
+coroutine.wrap(HAFIX_fake_script)()
+local function LEIFE_fake_script() -- UltraFpsBoost.LocalScript 
 	local script = Instance.new('LocalScript', UltraFpsBoost)
 
 	local Workspace = game:GetService("Workspace")
@@ -1100,8 +1108,8 @@ local function JBDIIW_fake_script() -- UltraFpsBoost.LocalScript
 	end)
 	
 end
-coroutine.wrap(JBDIIW_fake_script)()
-local function PBJI_fake_script() -- World.Draggable 
+coroutine.wrap(LEIFE_fake_script)()
+local function MRIH_fake_script() -- World.Draggable 
 	local script = Instance.new('LocalScript', World)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1144,8 +1152,8 @@ local function PBJI_fake_script() -- World.Draggable
 	end)
 	
 end
-coroutine.wrap(PBJI_fake_script)()
-local function AGTIRN_fake_script() -- InfJump.LocalScript 
+coroutine.wrap(MRIH_fake_script)()
+local function CKBPNHN_fake_script() -- InfJump.LocalScript 
 	local script = Instance.new('LocalScript', InfJump)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1195,8 +1203,8 @@ local function AGTIRN_fake_script() -- InfJump.LocalScript
 	end)
 	
 end
-coroutine.wrap(AGTIRN_fake_script)()
-local function GXUVD_fake_script() -- Speed.LocalScript 
+coroutine.wrap(CKBPNHN_fake_script)()
+local function WOBD_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	local Players = game:GetService("Players")
@@ -1257,8 +1265,8 @@ local function GXUVD_fake_script() -- Speed.LocalScript
 	end)
 	
 end
-coroutine.wrap(GXUVD_fake_script)()
-local function XTLPRP_fake_script() -- ToggleButton.LocalScript 
+coroutine.wrap(WOBD_fake_script)()
+local function NZDTV_fake_script() -- ToggleButton.LocalScript 
 	local script = Instance.new('LocalScript', ToggleButton)
 
 	-- Place this LocalScript inside your TextButton
@@ -1318,4 +1326,4 @@ local function XTLPRP_fake_script() -- ToggleButton.LocalScript
 	button.MouseButton1Click:Connect(toggleMenu)
 	
 end
-coroutine.wrap(XTLPRP_fake_script)()
+coroutine.wrap(NZDTV_fake_script)()
