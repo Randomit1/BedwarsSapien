@@ -7,6 +7,7 @@ local UICorner_2 = Instance.new("UICorner")
 local KillAura = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local UIGradient_2 = Instance.new("UIGradient")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local Visuals = Instance.new("Frame")
 local Visuals_2 = Instance.new("TextLabel")
 local UICorner_4 = Instance.new("UICorner")
@@ -24,6 +25,7 @@ local UIGradient_6 = Instance.new("UIGradient")
 local UltraFpsBoost = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
 local UIGradient_7 = Instance.new("UIGradient")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
 local World = Instance.new("Frame")
 local World_2 = Instance.new("TextLabel")
 local UICorner_10 = Instance.new("UICorner")
@@ -35,10 +37,11 @@ local UIGradient_9 = Instance.new("UIGradient")
 local Speed = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
 local UIGradient_10 = Instance.new("UIGradient")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
 local ToggleButton = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
 local UIGradient_11 = Instance.new("UIGradient")
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
 local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
 
 --Properties:
@@ -55,7 +58,7 @@ Combat.BackgroundTransparency = 0.300
 Combat.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Combat.BorderSizePixel = 0
 Combat.Position = UDim2.new(0.231774434, 0, 0.418663293, 0)
-Combat.Size = UDim2.new(0, 192, 0, 355)
+Combat.Size = UDim2.new(0.132049516, 0, 0.447667062, 0)
 
 Combat_2.Name = "Combat"
 Combat_2.Parent = Combat
@@ -98,6 +101,10 @@ UICorner_3.Parent = KillAura
 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_2.Parent = KillAura
 
+UIAspectRatioConstraint.Parent = Combat
+UIAspectRatioConstraint.AspectRatio = 0.541
+UIAspectRatioConstraint.DominantAxis = Enum.DominantAxis.Height
+
 Visuals.Name = "Visuals"
 Visuals.Parent = Bedwars
 Visuals.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -105,7 +112,7 @@ Visuals.BackgroundTransparency = 0.300
 Visuals.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Visuals.BorderSizePixel = 0
 Visuals.Position = UDim2.new(0.453920215, 0, 0.418663293, 0)
-Visuals.Size = UDim2.new(0, 192, 0, 355)
+Visuals.Size = UDim2.new(0.132049516, 0, 0.447667062, 0)
 
 Visuals_2.Name = "Visuals"
 Visuals_2.Parent = Visuals
@@ -205,6 +212,10 @@ UICorner_9.Parent = UltraFpsBoost
 UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_7.Parent = UltraFpsBoost
 
+UIAspectRatioConstraint_2.Parent = Visuals
+UIAspectRatioConstraint_2.AspectRatio = 0.541
+UIAspectRatioConstraint_2.DominantAxis = Enum.DominantAxis.Height
+
 World.Name = "World"
 World.Parent = Bedwars
 World.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -212,7 +223,7 @@ World.BackgroundTransparency = 0.300
 World.BorderColor3 = Color3.fromRGB(0, 0, 0)
 World.BorderSizePixel = 0
 World.Position = UDim2.new(0.678817034, 0, 0.418663293, 0)
-World.Size = UDim2.new(0, 192, 0, 355)
+World.Size = UDim2.new(0.132049516, 0, 0.447667062, 0)
 
 World_2.Name = "World"
 World_2.Parent = World
@@ -274,6 +285,10 @@ UICorner_13.Parent = Speed
 UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_10.Parent = Speed
 
+UIAspectRatioConstraint_3.Parent = World
+UIAspectRatioConstraint_3.AspectRatio = 0.541
+UIAspectRatioConstraint_3.DominantAxis = Enum.DominantAxis.Height
+
 ToggleButton.Name = "ToggleButton"
 ToggleButton.Parent = Bedwars
 ToggleButton.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
@@ -293,15 +308,15 @@ UICorner_14.Parent = ToggleButton
 UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(190, 255, 175)), ColorSequenceKeypoint.new(0.08, Color3.fromRGB(192, 255, 178)), ColorSequenceKeypoint.new(0.28, Color3.fromRGB(202, 255, 190)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_11.Parent = ToggleButton
 
-UIAspectRatioConstraint.Parent = ToggleButton
-UIAspectRatioConstraint.AspectRatio = 3.839
+UIAspectRatioConstraint_4.Parent = ToggleButton
+UIAspectRatioConstraint_4.AspectRatio = 3.839
 
 UITextSizeConstraint.Parent = ToggleButton
 UITextSizeConstraint.MaxTextSize = 56
 
 -- Scripts:
 
-local function SDIEIS_fake_script() -- Combat.Draggeble 
+local function ZQWYH_fake_script() -- Combat.Draggeble 
 	local script = Instance.new('LocalScript', Combat)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -344,8 +359,8 @@ local function SDIEIS_fake_script() -- Combat.Draggeble
 	end)
 	
 end
-coroutine.wrap(SDIEIS_fake_script)()
-local function FLWBO_fake_script() -- KillAura.LocalScript 
+coroutine.wrap(ZQWYH_fake_script)()
+local function LLHWBCK_fake_script() -- KillAura.LocalScript 
 	local script = Instance.new('LocalScript', KillAura)
 
 	local Players = game:GetService("Players")
@@ -484,8 +499,8 @@ local function FLWBO_fake_script() -- KillAura.LocalScript
 	end)
 	
 end
-coroutine.wrap(FLWBO_fake_script)()
-local function LDBM_fake_script() -- Visuals.Draggeble 
+coroutine.wrap(LLHWBCK_fake_script)()
+local function TBTPY_fake_script() -- Visuals.Draggeble 
 	local script = Instance.new('LocalScript', Visuals)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -528,8 +543,8 @@ local function LDBM_fake_script() -- Visuals.Draggeble
 	end)
 	
 end
-coroutine.wrap(LDBM_fake_script)()
-local function YDMCFS_fake_script() -- NameEsp.LocalScript 
+coroutine.wrap(TBTPY_fake_script)()
+local function RPUPM_fake_script() -- NameEsp.LocalScript 
 	local script = Instance.new('LocalScript', NameEsp)
 
 	local Players = game:GetService("Players")
@@ -635,8 +650,8 @@ local function YDMCFS_fake_script() -- NameEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(YDMCFS_fake_script)()
-local function RSQR_fake_script() -- PlayerEsp.LocalScript 
+coroutine.wrap(RPUPM_fake_script)()
+local function KMTGOZI_fake_script() -- PlayerEsp.LocalScript 
 	local script = Instance.new('LocalScript', PlayerEsp)
 
 	local Players = game:GetService("Players")
@@ -807,8 +822,8 @@ local function RSQR_fake_script() -- PlayerEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(RSQR_fake_script)()
-local function HAFIX_fake_script() -- Graphics.LocalScript 
+coroutine.wrap(KMTGOZI_fake_script)()
+local function KDROA_fake_script() -- Graphics.LocalScript 
 	local script = Instance.new('LocalScript', Graphics)
 
 	local Lighting = game:GetService("Lighting")
@@ -933,8 +948,8 @@ local function HAFIX_fake_script() -- Graphics.LocalScript
 	end)
 	
 end
-coroutine.wrap(HAFIX_fake_script)()
-local function LEIFE_fake_script() -- UltraFpsBoost.LocalScript 
+coroutine.wrap(KDROA_fake_script)()
+local function YMSNRE_fake_script() -- UltraFpsBoost.LocalScript 
 	local script = Instance.new('LocalScript', UltraFpsBoost)
 
 	local Workspace = game:GetService("Workspace")
@@ -1108,8 +1123,8 @@ local function LEIFE_fake_script() -- UltraFpsBoost.LocalScript
 	end)
 	
 end
-coroutine.wrap(LEIFE_fake_script)()
-local function MRIH_fake_script() -- World.Draggable 
+coroutine.wrap(YMSNRE_fake_script)()
+local function AZGLGB_fake_script() -- World.Draggable 
 	local script = Instance.new('LocalScript', World)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1152,8 +1167,8 @@ local function MRIH_fake_script() -- World.Draggable
 	end)
 	
 end
-coroutine.wrap(MRIH_fake_script)()
-local function CKBPNHN_fake_script() -- InfJump.LocalScript 
+coroutine.wrap(AZGLGB_fake_script)()
+local function ABGK_fake_script() -- InfJump.LocalScript 
 	local script = Instance.new('LocalScript', InfJump)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1203,8 +1218,8 @@ local function CKBPNHN_fake_script() -- InfJump.LocalScript
 	end)
 	
 end
-coroutine.wrap(CKBPNHN_fake_script)()
-local function WOBD_fake_script() -- Speed.LocalScript 
+coroutine.wrap(ABGK_fake_script)()
+local function VATBCYN_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	local Players = game:GetService("Players")
@@ -1265,8 +1280,8 @@ local function WOBD_fake_script() -- Speed.LocalScript
 	end)
 	
 end
-coroutine.wrap(WOBD_fake_script)()
-local function NZDTV_fake_script() -- ToggleButton.LocalScript 
+coroutine.wrap(VATBCYN_fake_script)()
+local function RJMDDF_fake_script() -- ToggleButton.LocalScript 
 	local script = Instance.new('LocalScript', ToggleButton)
 
 	-- Place this LocalScript inside your TextButton
@@ -1326,4 +1341,4 @@ local function NZDTV_fake_script() -- ToggleButton.LocalScript
 	button.MouseButton1Click:Connect(toggleMenu)
 	
 end
-coroutine.wrap(NZDTV_fake_script)()
+coroutine.wrap(RJMDDF_fake_script)()
