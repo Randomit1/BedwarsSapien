@@ -21,20 +21,23 @@ local UIGradient_5 = Instance.new("UIGradient")
 local Graphics = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
 local UIGradient_6 = Instance.new("UIGradient")
-local World = Instance.new("Frame")
-local World_2 = Instance.new("TextLabel")
+local UltraFpsBoost = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
 local UIGradient_7 = Instance.new("UIGradient")
+local World = Instance.new("Frame")
+local World_2 = Instance.new("TextLabel")
 local UICorner_10 = Instance.new("UICorner")
-local InfJump = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
 local UIGradient_8 = Instance.new("UIGradient")
-local Speed = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local InfJump = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
 local UIGradient_9 = Instance.new("UIGradient")
-local ToggleButton = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
 local UIGradient_10 = Instance.new("UIGradient")
+local ToggleButton = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local UIGradient_11 = Instance.new("UIGradient")
 
 --Properties:
 
@@ -181,6 +184,25 @@ UICorner_8.Parent = Graphics
 UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_6.Parent = Graphics
 
+UltraFpsBoost.Name = "UltraFpsBoost"
+UltraFpsBoost.Parent = Visuals
+UltraFpsBoost.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UltraFpsBoost.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UltraFpsBoost.BorderSizePixel = 0
+UltraFpsBoost.Position = UDim2.new(0.0682080612, 0, 0.588746488, 0)
+UltraFpsBoost.Size = UDim2.new(0, 164, 0, 50)
+UltraFpsBoost.Font = Enum.Font.Unknown
+UltraFpsBoost.Text = "UltraFpsBoost"
+UltraFpsBoost.TextColor3 = Color3.fromRGB(0, 0, 0)
+UltraFpsBoost.TextScaled = true
+UltraFpsBoost.TextSize = 14.000
+UltraFpsBoost.TextWrapped = true
+
+UICorner_9.Parent = UltraFpsBoost
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_7.Parent = UltraFpsBoost
+
 World.Name = "World"
 World.Parent = Bedwars
 World.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -204,13 +226,13 @@ World_2.TextScaled = true
 World_2.TextSize = 14.000
 World_2.TextWrapped = true
 
-UICorner_9.Parent = World_2
+UICorner_10.Parent = World_2
 
-UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(76, 76, 76)), ColorSequenceKeypoint.new(0.16, Color3.fromRGB(89, 89, 89)), ColorSequenceKeypoint.new(0.26, Color3.fromRGB(98, 98, 98)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(104, 104, 104)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(118, 118, 118)), ColorSequenceKeypoint.new(0.94, Color3.fromRGB(237, 237, 237)), ColorSequenceKeypoint.new(0.96, Color3.fromRGB(242, 242, 242)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_7.Parent = World_2
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(76, 76, 76)), ColorSequenceKeypoint.new(0.16, Color3.fromRGB(89, 89, 89)), ColorSequenceKeypoint.new(0.26, Color3.fromRGB(98, 98, 98)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(104, 104, 104)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(118, 118, 118)), ColorSequenceKeypoint.new(0.94, Color3.fromRGB(237, 237, 237)), ColorSequenceKeypoint.new(0.96, Color3.fromRGB(242, 242, 242)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_8.Parent = World_2
 
-UICorner_10.CornerRadius = UDim.new(0, 5)
-UICorner_10.Parent = World
+UICorner_11.CornerRadius = UDim.new(0, 5)
+UICorner_11.Parent = World
 
 InfJump.Name = "InfJump"
 InfJump.Parent = World
@@ -226,10 +248,10 @@ InfJump.TextScaled = true
 InfJump.TextSize = 14.000
 InfJump.TextWrapped = true
 
-UICorner_11.Parent = InfJump
+UICorner_12.Parent = InfJump
 
-UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.64, Color3.fromRGB(81, 88, 133)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_8.Parent = InfJump
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.64, Color3.fromRGB(81, 88, 133)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_9.Parent = InfJump
 
 Speed.Name = "Speed"
 Speed.Parent = World
@@ -245,10 +267,10 @@ Speed.TextScaled = true
 Speed.TextSize = 14.000
 Speed.TextWrapped = true
 
-UICorner_12.Parent = Speed
+UICorner_13.Parent = Speed
 
-UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_9.Parent = Speed
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_10.Parent = Speed
 
 ToggleButton.Name = "ToggleButton"
 ToggleButton.Parent = Bedwars
@@ -264,14 +286,14 @@ ToggleButton.TextScaled = true
 ToggleButton.TextSize = 14.000
 ToggleButton.TextWrapped = true
 
-UICorner_13.Parent = ToggleButton
+UICorner_14.Parent = ToggleButton
 
-UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(190, 255, 175)), ColorSequenceKeypoint.new(0.08, Color3.fromRGB(192, 255, 178)), ColorSequenceKeypoint.new(0.28, Color3.fromRGB(202, 255, 190)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_10.Parent = ToggleButton
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(190, 255, 175)), ColorSequenceKeypoint.new(0.08, Color3.fromRGB(192, 255, 178)), ColorSequenceKeypoint.new(0.28, Color3.fromRGB(202, 255, 190)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_11.Parent = ToggleButton
 
 -- Scripts:
 
-local function JUAEL_fake_script() -- Combat.Draggeble 
+local function CWSPZ_fake_script() -- Combat.Draggeble 
 	local script = Instance.new('LocalScript', Combat)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -314,8 +336,8 @@ local function JUAEL_fake_script() -- Combat.Draggeble
 	end)
 	
 end
-coroutine.wrap(JUAEL_fake_script)()
-local function OOJE_fake_script() -- KillAura.LocalScript 
+coroutine.wrap(CWSPZ_fake_script)()
+local function PSNA_fake_script() -- KillAura.LocalScript 
 	local script = Instance.new('LocalScript', KillAura)
 
 	local Players = game:GetService("Players")
@@ -454,8 +476,8 @@ local function OOJE_fake_script() -- KillAura.LocalScript
 	end)
 	
 end
-coroutine.wrap(OOJE_fake_script)()
-local function FYJQA_fake_script() -- Visuals.Draggeble 
+coroutine.wrap(PSNA_fake_script)()
+local function ARFYZY_fake_script() -- Visuals.Draggeble 
 	local script = Instance.new('LocalScript', Visuals)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -498,8 +520,8 @@ local function FYJQA_fake_script() -- Visuals.Draggeble
 	end)
 	
 end
-coroutine.wrap(FYJQA_fake_script)()
-local function NQXYAU_fake_script() -- NameEsp.LocalScript 
+coroutine.wrap(ARFYZY_fake_script)()
+local function DYNEOT_fake_script() -- NameEsp.LocalScript 
 	local script = Instance.new('LocalScript', NameEsp)
 
 	local Players = game:GetService("Players")
@@ -605,8 +627,8 @@ local function NQXYAU_fake_script() -- NameEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(NQXYAU_fake_script)()
-local function QIYO_fake_script() -- PlayerEsp.LocalScript 
+coroutine.wrap(DYNEOT_fake_script)()
+local function FHUPZRV_fake_script() -- PlayerEsp.LocalScript 
 	local script = Instance.new('LocalScript', PlayerEsp)
 
 	local Players = game:GetService("Players")
@@ -777,8 +799,8 @@ local function QIYO_fake_script() -- PlayerEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(QIYO_fake_script)()
-local function UUDLI_fake_script() -- Graphics.LocalScript 
+coroutine.wrap(FHUPZRV_fake_script)()
+local function BOFBMV_fake_script() -- Graphics.LocalScript 
 	local script = Instance.new('LocalScript', Graphics)
 
 	local Lighting = game:GetService("Lighting")
@@ -903,8 +925,170 @@ local function UUDLI_fake_script() -- Graphics.LocalScript
 	end)
 	
 end
-coroutine.wrap(UUDLI_fake_script)()
-local function NHNRE_fake_script() -- World.Draggable 
+coroutine.wrap(BOFBMV_fake_script)()
+local function JBKBDUR_fake_script() -- UltraFpsBoost.LocalScript 
+	local script = Instance.new('LocalScript', UltraFpsBoost)
+
+	local Lighting = game:GetService("Lighting")
+	local Workspace = game:GetService("Workspace")
+	
+	local button = script.Parent
+	
+	-- Create the thick black UI Stroke dynamically (Button Indicator)
+	local uiStroke = Instance.new("UIStroke")
+	uiStroke.Thickness = 4 
+	uiStroke.Color = Color3.fromRGB(0, 0, 0)
+	uiStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border 
+	uiStroke.Enabled = false
+	uiStroke.Parent = button
+	
+	local isFpsBoosterEnabled = false
+	local workspaceConnection = nil
+	local originalProperties = {} -- Stores original map properties to restore them later
+	
+	-- Save properties securely before altering them
+	local function saveOriginalProperty(obj, propertyName, val)
+		if not originalProperties[obj] then
+			originalProperties[obj] = {}
+		end
+		if originalProperties[obj][propertyName] == nil then
+			originalProperties[obj][propertyName] = val
+		end
+	end
+	
+	-- Process objects depending on the current toggle state
+	local function handleOptimization(obj)
+		if not obj or not obj.Parent then return end
+	
+		if isFpsBoosterEnabled then
+			-- --- OPTIMIZATIONS ACTIVE (ON STATE) ---
+			if obj:IsA("Decal") or obj:IsA("Texture") then
+				saveOriginalProperty(obj, "Transparency", obj.Transparency)
+				obj.Transparency = 1 -- Hide textures to maximize engine processing frames
+			elseif obj:IsA("ParticleEmitter") or obj:IsA("Trail") or obj:IsA("Smoke") or obj:IsA("Sparkles") or obj:IsA("Fire") then
+				saveOriginalProperty(obj, "Enabled", obj.Enabled)
+				obj.Enabled = false
+			elseif obj:IsA("MeshPart") then
+				saveOriginalProperty(obj, "RenderFidelity", obj.RenderFidelity)
+				saveOriginalProperty(obj, "CollisionFidelity", obj.CollisionFidelity)
+				obj.RenderFidelity = Enum.RenderFidelity.Performance
+				obj.CollisionFidelity = Enum.CollisionFidelity.Box
+			elseif obj:IsA("BasePart") and not obj:IsA("MeshPart") then
+				saveOriginalProperty(obj, "Material", obj.Material)
+				saveOriginalProperty(obj, "Reflectance", obj.Reflectance)
+				obj.Material = Enum.Material.SmoothPlastic
+				obj.Reflectance = 0
+			end
+		else
+			-- --- RESTORE MAP GRAPHICS (OFF STATE) ---
+			local saved = originalProperties[obj]
+			if saved then
+				for propName, originalValue in pairs(saved) do
+					pcall(function()
+						obj[propName] = originalValue
+					end)
+				end
+			end
+		end
+	end
+	
+	-- Turn ON the optimization process
+	local function activateFpsBooster()
+		if setfpscap then setfpscap(9999) end -- Uncap frame lock limits
+	
+		-- Optimize global environment settings
+		saveOriginalProperty(Lighting, "GlobalShadows", Lighting.GlobalShadows)
+		saveOriginalProperty(Lighting, "FogEnd", Lighting.FogEnd)
+		saveOriginalProperty(Lighting, "Brightness", Lighting.Brightness)
+	
+		Lighting.GlobalShadows = false
+		Lighting.FogEnd = 9e9
+		Lighting.Brightness = 1
+	
+		for _, effect in pairs(Lighting:GetChildren()) do
+			if effect:IsA("PostEffect") or effect:IsA("BloomEffect") or effect:IsA("BlurEffect") or effect:IsA("DepthOfFieldEffect") or effect:IsA("SunRaysEffect") then
+				saveOriginalProperty(effect, "Enabled", effect.Enabled)
+				effect.Enabled = false
+			end
+		end
+	
+		local Terrain = Workspace:FindFirstChildOfClass("Terrain")
+		if Terrain then
+			saveOriginalProperty(Terrain, "WaterWaveSize", Terrain.WaterWaveSize)
+			saveOriginalProperty(Terrain, "WaterWaveSpeed", Terrain.WaterWaveSpeed)
+			saveOriginalProperty(Terrain, "WaterReflectance", Terrain.WaterReflectance)
+			saveOriginalProperty(Terrain, "WaterTransparency", Terrain.WaterTransparency)
+	
+			Terrain.WaterWaveSize = 0
+			Terrain.WaterWaveSpeed = 0
+			Terrain.WaterReflectance = 0
+			Terrain.WaterTransparency = 0
+		end
+	
+		-- Apply optimization loop to everything currently in the game workspace
+		for _, desc in pairs(Workspace:GetDescendants()) do
+			handleOptimization(desc)
+		end
+	
+		-- Stream monitor incoming blocks, items, or visual projectiles dynamically
+		workspaceConnection = Workspace.DescendantAdded:Connect(function(desc)
+			handleOptimization(desc)
+		end)
+	end
+	
+	-- Turn OFF optimization and clean memory states
+	local function deactivateFpsBooster()
+		if workspaceConnection then
+			workspaceConnection:Disconnect()
+			workspaceConnection = nil
+		end
+	
+		-- Restore lighting configs
+		local savedLight = originalProperties[Lighting]
+		if savedLight then
+			for propName, val in pairs(savedLight) do
+				Lighting[propName] = val
+			end
+		end
+	
+		for _, effect in pairs(Lighting:GetChildren()) do
+			local savedEffect = originalProperties[effect]
+			if savedEffect and savedEffect["Enabled"] ~= nil then
+				effect.Enabled = savedEffect["Enabled"]
+			end
+		end
+	
+		local Terrain = Workspace:FindFirstChildOfClass("Terrain")
+		if Terrain and originalProperties[Terrain] then
+			for propName, val in pairs(originalProperties[Terrain]) do
+				Terrain[propName] = val
+			end
+		end
+	
+		-- Restore texture models back across the workspace tree map structure
+		for _, desc in pairs(Workspace:GetDescendants()) do
+			handleOptimization(desc)
+		end
+	
+		table.clear(originalProperties) -- Empty cache memory states clean
+	end
+	
+	-- Handle the button click to toggle states
+	button.MouseButton1Click:Connect(function()
+		isFpsBoosterEnabled = not isFpsBoosterEnabled
+	
+		if isFpsBoosterEnabled then
+			uiStroke.Enabled = true
+			activateFpsBooster()
+		else
+			uiStroke.Enabled = false
+			deactivateFpsBooster()
+		end
+	end)
+	
+end
+coroutine.wrap(JBKBDUR_fake_script)()
+local function WOOC_fake_script() -- World.Draggable 
 	local script = Instance.new('LocalScript', World)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -947,8 +1131,8 @@ local function NHNRE_fake_script() -- World.Draggable
 	end)
 	
 end
-coroutine.wrap(NHNRE_fake_script)()
-local function PLNTS_fake_script() -- InfJump.LocalScript 
+coroutine.wrap(WOOC_fake_script)()
+local function XHLIJSO_fake_script() -- InfJump.LocalScript 
 	local script = Instance.new('LocalScript', InfJump)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -998,8 +1182,8 @@ local function PLNTS_fake_script() -- InfJump.LocalScript
 	end)
 	
 end
-coroutine.wrap(PLNTS_fake_script)()
-local function VLFIJM_fake_script() -- Speed.LocalScript 
+coroutine.wrap(XHLIJSO_fake_script)()
+local function FVVHD_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	local Players = game:GetService("Players")
@@ -1060,8 +1244,8 @@ local function VLFIJM_fake_script() -- Speed.LocalScript
 	end)
 	
 end
-coroutine.wrap(VLFIJM_fake_script)()
-local function UECM_fake_script() -- ToggleButton.LocalScript 
+coroutine.wrap(FVVHD_fake_script)()
+local function BZMI_fake_script() -- ToggleButton.LocalScript 
 	local script = Instance.new('LocalScript', ToggleButton)
 
 	-- Place this LocalScript inside your TextButton
@@ -1121,4 +1305,4 @@ local function UECM_fake_script() -- ToggleButton.LocalScript
 	button.MouseButton1Click:Connect(toggleMenu)
 	
 end
-coroutine.wrap(UECM_fake_script)()
+coroutine.wrap(BZMI_fake_script)()
