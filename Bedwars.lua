@@ -1,44 +1,49 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local Bedwars = Instance.new("ScreenGui")
 local Combat = Instance.new("Frame")
-local Combat_2 = Instance.new("TextLabel")
 local UICorner = Instance.new("UICorner")
-local UIGradient = Instance.new("UIGradient")
-local UICorner_2 = Instance.new("UICorner")
 local KillAura = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local Combat_2 = Instance.new("TextLabel")
 local UICorner_3 = Instance.new("UICorner")
 local UIGradient_2 = Instance.new("UIGradient")
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local Visuals = Instance.new("Frame")
-local Visuals_2 = Instance.new("TextLabel")
 local UICorner_4 = Instance.new("UICorner")
-local UIGradient_3 = Instance.new("UIGradient")
-local UICorner_5 = Instance.new("UICorner")
 local NameEsp = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local PlayerEsp = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local UIGradient_4 = Instance.new("UIGradient")
-local PlayerEsp = Instance.new("TextButton")
+local Graphics = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local UIGradient_5 = Instance.new("UIGradient")
-local Graphics = Instance.new("TextButton")
+local UltraFpsBoost = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
 local UIGradient_6 = Instance.new("UIGradient")
-local UltraFpsBoost = Instance.new("TextButton")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local Visuals_2 = Instance.new("TextLabel")
 local UICorner_9 = Instance.new("UICorner")
 local UIGradient_7 = Instance.new("UIGradient")
-local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
 local World = Instance.new("Frame")
-local World_2 = Instance.new("TextLabel")
 local UICorner_10 = Instance.new("UICorner")
-local UIGradient_8 = Instance.new("UIGradient")
-local UICorner_11 = Instance.new("UICorner")
 local InfJump = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local UIGradient_8 = Instance.new("UIGradient")
+local Speed = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
 local UIGradient_9 = Instance.new("UIGradient")
-local Speed = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
-local UIGradient_10 = Instance.new("UIGradient")
 local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
 local Autobuy = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local UIGradient_10 = Instance.new("UIGradient")
+local World_2 = Instance.new("TextLabel")
 local UICorner_14 = Instance.new("UICorner")
 local UIGradient_11 = Instance.new("UIGradient")
 local ToggleButton = Instance.new("TextButton")
@@ -63,27 +68,8 @@ Combat.BorderSizePixel = 0
 Combat.Position = UDim2.new(0.231774434, 0, 0.418663293, 0)
 Combat.Size = UDim2.new(0.132049516, 0, 0.447667062, 0)
 
-Combat_2.Name = "Combat"
-Combat_2.Parent = Combat
-Combat_2.BackgroundColor3 = Color3.fromRGB(247, 255, 103)
-Combat_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Combat_2.BorderSizePixel = 0
-Combat_2.Position = UDim2.new(-0.020833334, 0, -0.140845075, 0)
-Combat_2.Size = UDim2.new(0, 200, 0, 50)
-Combat_2.Font = Enum.Font.Unknown
-Combat_2.Text = "Combat"
-Combat_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Combat_2.TextScaled = true
-Combat_2.TextSize = 14.000
-Combat_2.TextWrapped = true
-
-UICorner.Parent = Combat_2
-
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(68, 68, 68)), ColorSequenceKeypoint.new(0.18, Color3.fromRGB(70, 70, 70)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient.Parent = Combat_2
-
-UICorner_2.CornerRadius = UDim.new(0, 5)
-UICorner_2.Parent = Combat
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = Combat
 
 KillAura.Name = "KillAura"
 KillAura.Parent = Combat
@@ -99,14 +85,33 @@ KillAura.TextScaled = true
 KillAura.TextSize = 14.000
 KillAura.TextWrapped = true
 
-UICorner_3.Parent = KillAura
+UICorner_2.Parent = KillAura
 
-UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_2.Parent = KillAura
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Parent = KillAura
 
 UIAspectRatioConstraint.Parent = Combat
 UIAspectRatioConstraint.AspectRatio = 0.541
 UIAspectRatioConstraint.DominantAxis = Enum.DominantAxis.Height
+
+Combat_2.Name = "Combat"
+Combat_2.Parent = Combat
+Combat_2.BackgroundColor3 = Color3.fromRGB(247, 255, 103)
+Combat_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Combat_2.BorderSizePixel = 0
+Combat_2.Position = UDim2.new(-0.020833334, 0, -0.140845075, 0)
+Combat_2.Size = UDim2.new(0, 200, 0, 50)
+Combat_2.Font = Enum.Font.Unknown
+Combat_2.Text = "Combat"
+Combat_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Combat_2.TextScaled = true
+Combat_2.TextSize = 14.000
+Combat_2.TextWrapped = true
+
+UICorner_3.Parent = Combat_2
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(68, 68, 68)), ColorSequenceKeypoint.new(0.18, Color3.fromRGB(70, 70, 70)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Parent = Combat_2
 
 Visuals.Name = "Visuals"
 Visuals.Parent = Bedwars
@@ -117,27 +122,8 @@ Visuals.BorderSizePixel = 0
 Visuals.Position = UDim2.new(0.453920215, 0, 0.418663293, 0)
 Visuals.Size = UDim2.new(0.132049516, 0, 0.447667062, 0)
 
-Visuals_2.Name = "Visuals"
-Visuals_2.Parent = Visuals
-Visuals_2.BackgroundColor3 = Color3.fromRGB(71, 255, 83)
-Visuals_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Visuals_2.BorderSizePixel = 0
-Visuals_2.Position = UDim2.new(-0.020833334, 0, -0.140845075, 0)
-Visuals_2.Size = UDim2.new(0, 200, 0, 50)
-Visuals_2.Font = Enum.Font.Unknown
-Visuals_2.Text = "Visuals"
-Visuals_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Visuals_2.TextScaled = true
-Visuals_2.TextSize = 14.000
-Visuals_2.TextWrapped = true
-
-UICorner_4.Parent = Visuals_2
-
-UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(76, 76, 76)), ColorSequenceKeypoint.new(0.16, Color3.fromRGB(89, 89, 89)), ColorSequenceKeypoint.new(0.26, Color3.fromRGB(98, 98, 98)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(104, 104, 104)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(118, 118, 118)), ColorSequenceKeypoint.new(0.94, Color3.fromRGB(237, 237, 237)), ColorSequenceKeypoint.new(0.96, Color3.fromRGB(242, 242, 242)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_3.Parent = Visuals_2
-
-UICorner_5.CornerRadius = UDim.new(0, 5)
-UICorner_5.Parent = Visuals
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = Visuals
 
 NameEsp.Name = "NameEsp"
 NameEsp.Parent = Visuals
@@ -153,10 +139,10 @@ NameEsp.TextScaled = true
 NameEsp.TextSize = 14.000
 NameEsp.TextWrapped = true
 
-UICorner_6.Parent = NameEsp
+UICorner_5.Parent = NameEsp
 
-UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_4.Parent = NameEsp
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_3.Parent = NameEsp
 
 PlayerEsp.Name = "PlayerEsp"
 PlayerEsp.Parent = Visuals
@@ -172,10 +158,10 @@ PlayerEsp.TextScaled = true
 PlayerEsp.TextSize = 14.000
 PlayerEsp.TextWrapped = true
 
-UICorner_7.Parent = PlayerEsp
+UICorner_6.Parent = PlayerEsp
 
-UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_5.Parent = PlayerEsp
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_4.Parent = PlayerEsp
 
 Graphics.Name = "Graphics"
 Graphics.Parent = Visuals
@@ -191,10 +177,10 @@ Graphics.TextScaled = true
 Graphics.TextSize = 14.000
 Graphics.TextWrapped = true
 
-UICorner_8.Parent = Graphics
+UICorner_7.Parent = Graphics
 
-UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_6.Parent = Graphics
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_5.Parent = Graphics
 
 UltraFpsBoost.Name = "UltraFpsBoost"
 UltraFpsBoost.Parent = Visuals
@@ -210,14 +196,33 @@ UltraFpsBoost.TextScaled = true
 UltraFpsBoost.TextSize = 14.000
 UltraFpsBoost.TextWrapped = true
 
-UICorner_9.Parent = UltraFpsBoost
+UICorner_8.Parent = UltraFpsBoost
 
-UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_7.Parent = UltraFpsBoost
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_6.Parent = UltraFpsBoost
 
 UIAspectRatioConstraint_2.Parent = Visuals
 UIAspectRatioConstraint_2.AspectRatio = 0.541
 UIAspectRatioConstraint_2.DominantAxis = Enum.DominantAxis.Height
+
+Visuals_2.Name = "Visuals"
+Visuals_2.Parent = Visuals
+Visuals_2.BackgroundColor3 = Color3.fromRGB(71, 255, 83)
+Visuals_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Visuals_2.BorderSizePixel = 0
+Visuals_2.Position = UDim2.new(-0.020833334, 0, -0.140845075, 0)
+Visuals_2.Size = UDim2.new(0, 200, 0, 50)
+Visuals_2.Font = Enum.Font.Unknown
+Visuals_2.Text = "Visuals"
+Visuals_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Visuals_2.TextScaled = true
+Visuals_2.TextSize = 14.000
+Visuals_2.TextWrapped = true
+
+UICorner_9.Parent = Visuals_2
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(76, 76, 76)), ColorSequenceKeypoint.new(0.16, Color3.fromRGB(89, 89, 89)), ColorSequenceKeypoint.new(0.26, Color3.fromRGB(98, 98, 98)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(104, 104, 104)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(118, 118, 118)), ColorSequenceKeypoint.new(0.94, Color3.fromRGB(237, 237, 237)), ColorSequenceKeypoint.new(0.96, Color3.fromRGB(242, 242, 242)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_7.Parent = Visuals_2
 
 World.Name = "World"
 World.Parent = Bedwars
@@ -228,27 +233,8 @@ World.BorderSizePixel = 0
 World.Position = UDim2.new(0.678817034, 0, 0.418663293, 0)
 World.Size = UDim2.new(0.132049516, 0, 0.447667062, 0)
 
-World_2.Name = "World"
-World_2.Parent = World
-World_2.BackgroundColor3 = Color3.fromRGB(58, 68, 255)
-World_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-World_2.BorderSizePixel = 0
-World_2.Position = UDim2.new(-0.020833334, 0, -0.140845075, 0)
-World_2.Size = UDim2.new(0, 200, 0, 50)
-World_2.Font = Enum.Font.Unknown
-World_2.Text = "World"
-World_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-World_2.TextScaled = true
-World_2.TextSize = 14.000
-World_2.TextWrapped = true
-
-UICorner_10.Parent = World_2
-
-UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(76, 76, 76)), ColorSequenceKeypoint.new(0.16, Color3.fromRGB(89, 89, 89)), ColorSequenceKeypoint.new(0.26, Color3.fromRGB(98, 98, 98)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(104, 104, 104)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(118, 118, 118)), ColorSequenceKeypoint.new(0.94, Color3.fromRGB(237, 237, 237)), ColorSequenceKeypoint.new(0.96, Color3.fromRGB(242, 242, 242)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_8.Parent = World_2
-
-UICorner_11.CornerRadius = UDim.new(0, 5)
-UICorner_11.Parent = World
+UICorner_10.CornerRadius = UDim.new(0, 5)
+UICorner_10.Parent = World
 
 InfJump.Name = "InfJump"
 InfJump.Parent = World
@@ -264,10 +250,10 @@ InfJump.TextScaled = true
 InfJump.TextSize = 14.000
 InfJump.TextWrapped = true
 
-UICorner_12.Parent = InfJump
+UICorner_11.Parent = InfJump
 
-UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.64, Color3.fromRGB(81, 88, 133)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_9.Parent = InfJump
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.64, Color3.fromRGB(81, 88, 133)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_8.Parent = InfJump
 
 Speed.Name = "Speed"
 Speed.Parent = World
@@ -283,10 +269,10 @@ Speed.TextScaled = true
 Speed.TextSize = 14.000
 Speed.TextWrapped = true
 
-UICorner_13.Parent = Speed
+UICorner_12.Parent = Speed
 
-UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_10.Parent = Speed
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(100, 107, 146)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_9.Parent = Speed
 
 UIAspectRatioConstraint_3.Parent = World
 UIAspectRatioConstraint_3.AspectRatio = 0.541
@@ -306,10 +292,29 @@ Autobuy.TextScaled = true
 Autobuy.TextSize = 14.000
 Autobuy.TextWrapped = true
 
-UICorner_14.Parent = Autobuy
+UICorner_13.Parent = Autobuy
 
-UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.64, Color3.fromRGB(81, 88, 133)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_11.Parent = Autobuy
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 18, 81)), ColorSequenceKeypoint.new(0.64, Color3.fromRGB(81, 88, 133)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_10.Parent = Autobuy
+
+World_2.Name = "World"
+World_2.Parent = World
+World_2.BackgroundColor3 = Color3.fromRGB(58, 68, 255)
+World_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+World_2.BorderSizePixel = 0
+World_2.Position = UDim2.new(-0.020833334, 0, -0.140845075, 0)
+World_2.Size = UDim2.new(0, 200, 0, 50)
+World_2.Font = Enum.Font.Unknown
+World_2.Text = "World"
+World_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+World_2.TextScaled = true
+World_2.TextSize = 14.000
+World_2.TextWrapped = true
+
+UICorner_14.Parent = World_2
+
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(76, 76, 76)), ColorSequenceKeypoint.new(0.16, Color3.fromRGB(89, 89, 89)), ColorSequenceKeypoint.new(0.26, Color3.fromRGB(98, 98, 98)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(104, 104, 104)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(118, 118, 118)), ColorSequenceKeypoint.new(0.94, Color3.fromRGB(237, 237, 237)), ColorSequenceKeypoint.new(0.96, Color3.fromRGB(242, 242, 242)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_11.Parent = World_2
 
 ToggleButton.Name = "ToggleButton"
 ToggleButton.Parent = Bedwars
@@ -338,7 +343,7 @@ UITextSizeConstraint.MaxTextSize = 56
 
 -- Scripts:
 
-local function TTGKED_fake_script() -- Combat.Draggeble 
+local function UMZMI_fake_script() -- Combat.Draggeble 
 	local script = Instance.new('LocalScript', Combat)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -381,8 +386,8 @@ local function TTGKED_fake_script() -- Combat.Draggeble
 	end)
 	
 end
-coroutine.wrap(TTGKED_fake_script)()
-local function USLT_fake_script() -- KillAura.LocalScript 
+coroutine.wrap(UMZMI_fake_script)()
+local function OVNYAE_fake_script() -- KillAura.LocalScript 
 	local script = Instance.new('LocalScript', KillAura)
 
 	local Players = game:GetService("Players")
@@ -521,8 +526,8 @@ local function USLT_fake_script() -- KillAura.LocalScript
 	end)
 	
 end
-coroutine.wrap(USLT_fake_script)()
-local function VAXLGIB_fake_script() -- Visuals.Draggeble 
+coroutine.wrap(OVNYAE_fake_script)()
+local function ZPBMDDN_fake_script() -- Visuals.Draggeble 
 	local script = Instance.new('LocalScript', Visuals)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -565,8 +570,8 @@ local function VAXLGIB_fake_script() -- Visuals.Draggeble
 	end)
 	
 end
-coroutine.wrap(VAXLGIB_fake_script)()
-local function SPRI_fake_script() -- NameEsp.LocalScript 
+coroutine.wrap(ZPBMDDN_fake_script)()
+local function ZWBKT_fake_script() -- NameEsp.LocalScript 
 	local script = Instance.new('LocalScript', NameEsp)
 
 	local Players = game:GetService("Players")
@@ -672,8 +677,8 @@ local function SPRI_fake_script() -- NameEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(SPRI_fake_script)()
-local function QNLSAI_fake_script() -- PlayerEsp.LocalScript 
+coroutine.wrap(ZWBKT_fake_script)()
+local function RQCMWJ_fake_script() -- PlayerEsp.LocalScript 
 	local script = Instance.new('LocalScript', PlayerEsp)
 
 	local Players = game:GetService("Players")
@@ -844,8 +849,8 @@ local function QNLSAI_fake_script() -- PlayerEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(QNLSAI_fake_script)()
-local function RMEK_fake_script() -- Graphics.LocalScript 
+coroutine.wrap(RQCMWJ_fake_script)()
+local function FFFNWY_fake_script() -- Graphics.LocalScript 
 	local script = Instance.new('LocalScript', Graphics)
 
 	local Lighting = game:GetService("Lighting")
@@ -970,8 +975,8 @@ local function RMEK_fake_script() -- Graphics.LocalScript
 	end)
 	
 end
-coroutine.wrap(RMEK_fake_script)()
-local function BIGAIAO_fake_script() -- UltraFpsBoost.LocalScript 
+coroutine.wrap(FFFNWY_fake_script)()
+local function ONUMARC_fake_script() -- UltraFpsBoost.LocalScript 
 	local script = Instance.new('LocalScript', UltraFpsBoost)
 
 	local Workspace = game:GetService("Workspace")
@@ -1145,8 +1150,8 @@ local function BIGAIAO_fake_script() -- UltraFpsBoost.LocalScript
 	end)
 	
 end
-coroutine.wrap(BIGAIAO_fake_script)()
-local function WCMXO_fake_script() -- World.Draggable 
+coroutine.wrap(ONUMARC_fake_script)()
+local function UZBKB_fake_script() -- World.Draggable 
 	local script = Instance.new('LocalScript', World)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1189,8 +1194,8 @@ local function WCMXO_fake_script() -- World.Draggable
 	end)
 	
 end
-coroutine.wrap(WCMXO_fake_script)()
-local function JVPOBU_fake_script() -- InfJump.LocalScript 
+coroutine.wrap(UZBKB_fake_script)()
+local function ZPOANNC_fake_script() -- InfJump.LocalScript 
 	local script = Instance.new('LocalScript', InfJump)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1240,8 +1245,8 @@ local function JVPOBU_fake_script() -- InfJump.LocalScript
 	end)
 	
 end
-coroutine.wrap(JVPOBU_fake_script)()
-local function TQFVJ_fake_script() -- Speed.LocalScript 
+coroutine.wrap(ZPOANNC_fake_script)()
+local function JKKDJGX_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	local Players = game:GetService("Players")
@@ -1302,8 +1307,8 @@ local function TQFVJ_fake_script() -- Speed.LocalScript
 	end)
 	
 end
-coroutine.wrap(TQFVJ_fake_script)()
-local function KRPB_fake_script() -- Autobuy.LocalScript 
+coroutine.wrap(JKKDJGX_fake_script)()
+local function RIQPKUE_fake_script() -- Autobuy.LocalScript 
 	local script = Instance.new('LocalScript', Autobuy)
 
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -1388,8 +1393,8 @@ local function KRPB_fake_script() -- Autobuy.LocalScript
 	end)
 	
 end
-coroutine.wrap(KRPB_fake_script)()
-local function HIGN_fake_script() -- ToggleButton.LocalScript 
+coroutine.wrap(RIQPKUE_fake_script)()
+local function VEERZFU_fake_script() -- ToggleButton.LocalScript 
 	local script = Instance.new('LocalScript', ToggleButton)
 
 	-- Place this LocalScript inside your TextButton
@@ -1449,4 +1454,4 @@ local function HIGN_fake_script() -- ToggleButton.LocalScript
 	button.MouseButton1Click:Connect(toggleMenu)
 	
 end
-coroutine.wrap(HIGN_fake_script)()
+coroutine.wrap(VEERZFU_fake_script)()
