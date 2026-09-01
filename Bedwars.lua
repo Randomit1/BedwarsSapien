@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local Bedwars = Instance.new("ScreenGui")
 local Combat = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -92,6 +87,7 @@ UIGradient.Parent = KillAura
 
 UIAspectRatioConstraint.Parent = Combat
 UIAspectRatioConstraint.AspectRatio = 0.541
+UIAspectRatioConstraint.AspectType = Enum.AspectType.ScaleWithParentSize
 UIAspectRatioConstraint.DominantAxis = Enum.DominantAxis.Height
 
 Combat_2.Name = "Combat"
@@ -203,6 +199,7 @@ UIGradient_6.Parent = UltraFpsBoost
 
 UIAspectRatioConstraint_2.Parent = Visuals
 UIAspectRatioConstraint_2.AspectRatio = 0.541
+UIAspectRatioConstraint_2.AspectType = Enum.AspectType.ScaleWithParentSize
 UIAspectRatioConstraint_2.DominantAxis = Enum.DominantAxis.Height
 
 Visuals_2.Name = "Visuals"
@@ -276,6 +273,7 @@ UIGradient_9.Parent = Speed
 
 UIAspectRatioConstraint_3.Parent = World
 UIAspectRatioConstraint_3.AspectRatio = 0.541
+UIAspectRatioConstraint_3.AspectType = Enum.AspectType.ScaleWithParentSize
 UIAspectRatioConstraint_3.DominantAxis = Enum.DominantAxis.Height
 
 Autobuy.Name = "Autobuy"
@@ -343,7 +341,7 @@ UITextSizeConstraint.MaxTextSize = 56
 
 -- Scripts:
 
-local function KKGKO_fake_script() -- Combat.Draggeble 
+local function UBQW_fake_script() -- Combat.Draggeble 
 	local script = Instance.new('LocalScript', Combat)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -386,8 +384,8 @@ local function KKGKO_fake_script() -- Combat.Draggeble
 	end)
 	
 end
-coroutine.wrap(KKGKO_fake_script)()
-local function LWKF_fake_script() -- KillAura.LocalScript 
+coroutine.wrap(UBQW_fake_script)()
+local function EKUZIUK_fake_script() -- KillAura.LocalScript 
 	local script = Instance.new('LocalScript', KillAura)
 
 	local Players = game:GetService("Players")
@@ -526,8 +524,8 @@ local function LWKF_fake_script() -- KillAura.LocalScript
 	end)
 	
 end
-coroutine.wrap(LWKF_fake_script)()
-local function FWMTGC_fake_script() -- Visuals.Draggeble 
+coroutine.wrap(EKUZIUK_fake_script)()
+local function SCQQNA_fake_script() -- Visuals.Draggeble 
 	local script = Instance.new('LocalScript', Visuals)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -570,8 +568,8 @@ local function FWMTGC_fake_script() -- Visuals.Draggeble
 	end)
 	
 end
-coroutine.wrap(FWMTGC_fake_script)()
-local function JAJIIO_fake_script() -- NameEsp.LocalScript 
+coroutine.wrap(SCQQNA_fake_script)()
+local function BPSZ_fake_script() -- NameEsp.LocalScript 
 	local script = Instance.new('LocalScript', NameEsp)
 
 	local Players = game:GetService("Players")
@@ -677,8 +675,8 @@ local function JAJIIO_fake_script() -- NameEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(JAJIIO_fake_script)()
-local function GWDCMUF_fake_script() -- PlayerEsp.LocalScript 
+coroutine.wrap(BPSZ_fake_script)()
+local function VWVR_fake_script() -- PlayerEsp.LocalScript 
 	local script = Instance.new('LocalScript', PlayerEsp)
 
 	local Players = game:GetService("Players")
@@ -849,8 +847,8 @@ local function GWDCMUF_fake_script() -- PlayerEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(GWDCMUF_fake_script)()
-local function ZLSCYKU_fake_script() -- Graphics.LocalScript 
+coroutine.wrap(VWVR_fake_script)()
+local function TLEV_fake_script() -- Graphics.LocalScript 
 	local script = Instance.new('LocalScript', Graphics)
 
 	local Lighting = game:GetService("Lighting")
@@ -975,8 +973,8 @@ local function ZLSCYKU_fake_script() -- Graphics.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZLSCYKU_fake_script)()
-local function BWHVAO_fake_script() -- UltraFpsBoost.LocalScript 
+coroutine.wrap(TLEV_fake_script)()
+local function VEPPS_fake_script() -- UltraFpsBoost.LocalScript 
 	local script = Instance.new('LocalScript', UltraFpsBoost)
 
 	local Workspace = game:GetService("Workspace")
@@ -1150,8 +1148,8 @@ local function BWHVAO_fake_script() -- UltraFpsBoost.LocalScript
 	end)
 	
 end
-coroutine.wrap(BWHVAO_fake_script)()
-local function IUHEOU_fake_script() -- World.Draggable 
+coroutine.wrap(VEPPS_fake_script)()
+local function JSXF_fake_script() -- World.Draggable 
 	local script = Instance.new('LocalScript', World)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1194,8 +1192,8 @@ local function IUHEOU_fake_script() -- World.Draggable
 	end)
 	
 end
-coroutine.wrap(IUHEOU_fake_script)()
-local function TGYF_fake_script() -- InfJump.LocalScript 
+coroutine.wrap(JSXF_fake_script)()
+local function VKQSKHR_fake_script() -- InfJump.LocalScript 
 	local script = Instance.new('LocalScript', InfJump)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1245,8 +1243,8 @@ local function TGYF_fake_script() -- InfJump.LocalScript
 	end)
 	
 end
-coroutine.wrap(TGYF_fake_script)()
-local function BHMSSYM_fake_script() -- Speed.LocalScript 
+coroutine.wrap(VKQSKHR_fake_script)()
+local function QUHIDHF_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	local Players = game:GetService("Players")
@@ -1306,8 +1304,8 @@ local function BHMSSYM_fake_script() -- Speed.LocalScript
 	end)
 	
 end
-coroutine.wrap(BHMSSYM_fake_script)()
-local function NBAYL_fake_script() -- Autobuy.LocalScript 
+coroutine.wrap(QUHIDHF_fake_script)()
+local function XOYEVRJ_fake_script() -- Autobuy.LocalScript 
 	local script = Instance.new('LocalScript', Autobuy)
 
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -1392,8 +1390,8 @@ local function NBAYL_fake_script() -- Autobuy.LocalScript
 	end)
 	
 end
-coroutine.wrap(NBAYL_fake_script)()
-local function EDOXKYB_fake_script() -- ToggleButton.LocalScript 
+coroutine.wrap(XOYEVRJ_fake_script)()
+local function CGVK_fake_script() -- ToggleButton.LocalScript 
 	local script = Instance.new('LocalScript', ToggleButton)
 
 	-- Place this LocalScript inside your TextButton
@@ -1453,4 +1451,4 @@ local function EDOXKYB_fake_script() -- ToggleButton.LocalScript
 	button.MouseButton1Click:Connect(toggleMenu)
 	
 end
-coroutine.wrap(EDOXKYB_fake_script)()
+coroutine.wrap(CGVK_fake_script)()
