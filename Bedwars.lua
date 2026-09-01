@@ -65,8 +65,8 @@ Combat.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Combat.BackgroundTransparency = 0.300
 Combat.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Combat.BorderSizePixel = 0
-Combat.Position = UDim2.new(0.231774434, 0, 0.418663293, 0)
-Combat.Size = UDim2.new(0.132049516, 0, 0.447667062, 0)
+Combat.Position = UDim2.new(0.23177442, 0, 0.417402267, 0)
+Combat.Size = UDim2.new(0.131677553, 0, 0.446406066, 0)
 
 UICorner.CornerRadius = UDim.new(0, 5)
 UICorner.Parent = Combat
@@ -119,8 +119,8 @@ Visuals.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Visuals.BackgroundTransparency = 0.300
 Visuals.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Visuals.BorderSizePixel = 0
-Visuals.Position = UDim2.new(0.453920215, 0, 0.418663293, 0)
-Visuals.Size = UDim2.new(0.132049516, 0, 0.447667062, 0)
+Visuals.Position = UDim2.new(0.453232467, 0, 0.417402267, 0)
+Visuals.Size = UDim2.new(0.131677553, 0, 0.446406066, 0)
 
 UICorner_4.CornerRadius = UDim.new(0, 5)
 UICorner_4.Parent = Visuals
@@ -230,8 +230,8 @@ World.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 World.BackgroundTransparency = 0.300
 World.BorderColor3 = Color3.fromRGB(0, 0, 0)
 World.BorderSizePixel = 0
-World.Position = UDim2.new(0.678817034, 0, 0.418663293, 0)
-World.Size = UDim2.new(0.132049516, 0, 0.447667062, 0)
+World.Position = UDim2.new(0.678129315, 0, 0.417402267, 0)
+World.Size = UDim2.new(0.131677553, 0, 0.446406066, 0)
 
 UICorner_10.CornerRadius = UDim.new(0, 5)
 UICorner_10.Parent = World
@@ -343,7 +343,7 @@ UITextSizeConstraint.MaxTextSize = 56
 
 -- Scripts:
 
-local function UMZMI_fake_script() -- Combat.Draggeble 
+local function KKGKO_fake_script() -- Combat.Draggeble 
 	local script = Instance.new('LocalScript', Combat)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -386,8 +386,8 @@ local function UMZMI_fake_script() -- Combat.Draggeble
 	end)
 	
 end
-coroutine.wrap(UMZMI_fake_script)()
-local function OVNYAE_fake_script() -- KillAura.LocalScript 
+coroutine.wrap(KKGKO_fake_script)()
+local function LWKF_fake_script() -- KillAura.LocalScript 
 	local script = Instance.new('LocalScript', KillAura)
 
 	local Players = game:GetService("Players")
@@ -526,8 +526,8 @@ local function OVNYAE_fake_script() -- KillAura.LocalScript
 	end)
 	
 end
-coroutine.wrap(OVNYAE_fake_script)()
-local function ZPBMDDN_fake_script() -- Visuals.Draggeble 
+coroutine.wrap(LWKF_fake_script)()
+local function FWMTGC_fake_script() -- Visuals.Draggeble 
 	local script = Instance.new('LocalScript', Visuals)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -570,8 +570,8 @@ local function ZPBMDDN_fake_script() -- Visuals.Draggeble
 	end)
 	
 end
-coroutine.wrap(ZPBMDDN_fake_script)()
-local function ZWBKT_fake_script() -- NameEsp.LocalScript 
+coroutine.wrap(FWMTGC_fake_script)()
+local function JAJIIO_fake_script() -- NameEsp.LocalScript 
 	local script = Instance.new('LocalScript', NameEsp)
 
 	local Players = game:GetService("Players")
@@ -677,8 +677,8 @@ local function ZWBKT_fake_script() -- NameEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZWBKT_fake_script)()
-local function RQCMWJ_fake_script() -- PlayerEsp.LocalScript 
+coroutine.wrap(JAJIIO_fake_script)()
+local function GWDCMUF_fake_script() -- PlayerEsp.LocalScript 
 	local script = Instance.new('LocalScript', PlayerEsp)
 
 	local Players = game:GetService("Players")
@@ -849,8 +849,8 @@ local function RQCMWJ_fake_script() -- PlayerEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(RQCMWJ_fake_script)()
-local function FFFNWY_fake_script() -- Graphics.LocalScript 
+coroutine.wrap(GWDCMUF_fake_script)()
+local function ZLSCYKU_fake_script() -- Graphics.LocalScript 
 	local script = Instance.new('LocalScript', Graphics)
 
 	local Lighting = game:GetService("Lighting")
@@ -975,8 +975,8 @@ local function FFFNWY_fake_script() -- Graphics.LocalScript
 	end)
 	
 end
-coroutine.wrap(FFFNWY_fake_script)()
-local function ONUMARC_fake_script() -- UltraFpsBoost.LocalScript 
+coroutine.wrap(ZLSCYKU_fake_script)()
+local function BWHVAO_fake_script() -- UltraFpsBoost.LocalScript 
 	local script = Instance.new('LocalScript', UltraFpsBoost)
 
 	local Workspace = game:GetService("Workspace")
@@ -1150,8 +1150,8 @@ local function ONUMARC_fake_script() -- UltraFpsBoost.LocalScript
 	end)
 	
 end
-coroutine.wrap(ONUMARC_fake_script)()
-local function UZBKB_fake_script() -- World.Draggable 
+coroutine.wrap(BWHVAO_fake_script)()
+local function IUHEOU_fake_script() -- World.Draggable 
 	local script = Instance.new('LocalScript', World)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1194,8 +1194,8 @@ local function UZBKB_fake_script() -- World.Draggable
 	end)
 	
 end
-coroutine.wrap(UZBKB_fake_script)()
-local function ZPOANNC_fake_script() -- InfJump.LocalScript 
+coroutine.wrap(IUHEOU_fake_script)()
+local function TGYF_fake_script() -- InfJump.LocalScript 
 	local script = Instance.new('LocalScript', InfJump)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1245,25 +1245,24 @@ local function ZPOANNC_fake_script() -- InfJump.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZPOANNC_fake_script)()
-local function JKKDJGX_fake_script() -- Speed.LocalScript 
+coroutine.wrap(TGYF_fake_script)()
+local function BHMSSYM_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
-	
 	local button = script.Parent
 	local player = Players.LocalPlayer
 	
 	-- Define your speeds
 	local DEFAULT_SPEED = 16
-	local BOOST_SPEED = 23
+	local BOOST_SPEED = 22.6 -- Updated speed here
 	
 	-- Create the thick black UI Stroke dynamically (Button Indicator)
 	local uiStroke = Instance.new("UIStroke")
-	uiStroke.Thickness = 4 
+	uiStroke.Thickness = 4
 	uiStroke.Color = Color3.fromRGB(0, 0, 0)
-	uiStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border 
+	uiStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 	uiStroke.Enabled = false
 	uiStroke.Parent = button
 	
@@ -1278,7 +1277,7 @@ local function JKKDJGX_fake_script() -- Speed.LocalScript
 		return nil
 	end
 	
-	-- FIX: Forces the speed to exactly 23 EVERY SINGLE FRAME to defeat active sprint scripts
+	-- FIX: Forces the speed to exactly 22.6 EVERY SINGLE FRAME to defeat active sprint scripts
 	RunService.Heartbeat:Connect(function()
 		if isSpeedEnabled then
 			local humanoid = getHumanoid()
@@ -1307,8 +1306,8 @@ local function JKKDJGX_fake_script() -- Speed.LocalScript
 	end)
 	
 end
-coroutine.wrap(JKKDJGX_fake_script)()
-local function RIQPKUE_fake_script() -- Autobuy.LocalScript 
+coroutine.wrap(BHMSSYM_fake_script)()
+local function NBAYL_fake_script() -- Autobuy.LocalScript 
 	local script = Instance.new('LocalScript', Autobuy)
 
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -1393,8 +1392,8 @@ local function RIQPKUE_fake_script() -- Autobuy.LocalScript
 	end)
 	
 end
-coroutine.wrap(RIQPKUE_fake_script)()
-local function VEERZFU_fake_script() -- ToggleButton.LocalScript 
+coroutine.wrap(NBAYL_fake_script)()
+local function EDOXKYB_fake_script() -- ToggleButton.LocalScript 
 	local script = Instance.new('LocalScript', ToggleButton)
 
 	-- Place this LocalScript inside your TextButton
@@ -1454,4 +1453,4 @@ local function VEERZFU_fake_script() -- ToggleButton.LocalScript
 	button.MouseButton1Click:Connect(toggleMenu)
 	
 end
-coroutine.wrap(VEERZFU_fake_script)()
+coroutine.wrap(EDOXKYB_fake_script)()
