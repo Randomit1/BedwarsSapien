@@ -341,7 +341,7 @@ UITextSizeConstraint.MaxTextSize = 56
 
 -- Scripts:
 
-local function YCDDMQU_fake_script() -- Combat.Draggeble 
+local function VATRQHQ_fake_script() -- Combat.Draggeble 
 	local script = Instance.new('LocalScript', Combat)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -384,8 +384,8 @@ local function YCDDMQU_fake_script() -- Combat.Draggeble
 	end)
 	
 end
-coroutine.wrap(YCDDMQU_fake_script)()
-local function EDNGSTS_fake_script() -- KillAura.LocalScript 
+coroutine.wrap(VATRQHQ_fake_script)()
+local function ODXNV_fake_script() -- KillAura.LocalScript 
 	local script = Instance.new('LocalScript', KillAura)
 
 	local Players = game:GetService("Players")
@@ -524,8 +524,8 @@ local function EDNGSTS_fake_script() -- KillAura.LocalScript
 	end)
 	
 end
-coroutine.wrap(EDNGSTS_fake_script)()
-local function YLHILI_fake_script() -- Visuals.Draggeble 
+coroutine.wrap(ODXNV_fake_script)()
+local function OKQVKH_fake_script() -- Visuals.Draggeble 
 	local script = Instance.new('LocalScript', Visuals)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -568,8 +568,8 @@ local function YLHILI_fake_script() -- Visuals.Draggeble
 	end)
 	
 end
-coroutine.wrap(YLHILI_fake_script)()
-local function LLFT_fake_script() -- NameEsp.LocalScript 
+coroutine.wrap(OKQVKH_fake_script)()
+local function EYRUNB_fake_script() -- NameEsp.LocalScript 
 	local script = Instance.new('LocalScript', NameEsp)
 
 	local Players = game:GetService("Players")
@@ -675,8 +675,8 @@ local function LLFT_fake_script() -- NameEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(LLFT_fake_script)()
-local function UNJLZO_fake_script() -- PlayerEsp.LocalScript 
+coroutine.wrap(EYRUNB_fake_script)()
+local function XKOUJN_fake_script() -- PlayerEsp.LocalScript 
 	local script = Instance.new('LocalScript', PlayerEsp)
 
 	local Players = game:GetService("Players")
@@ -847,8 +847,8 @@ local function UNJLZO_fake_script() -- PlayerEsp.LocalScript
 	end)
 	
 end
-coroutine.wrap(UNJLZO_fake_script)()
-local function SGZDEIP_fake_script() -- Graphics.LocalScript 
+coroutine.wrap(XKOUJN_fake_script)()
+local function ZKYHPZ_fake_script() -- Graphics.LocalScript 
 	local script = Instance.new('LocalScript', Graphics)
 
 	local Lighting = game:GetService("Lighting")
@@ -973,8 +973,8 @@ local function SGZDEIP_fake_script() -- Graphics.LocalScript
 	end)
 	
 end
-coroutine.wrap(SGZDEIP_fake_script)()
-local function LPOHG_fake_script() -- UltraFpsBoost.LocalScript 
+coroutine.wrap(ZKYHPZ_fake_script)()
+local function XCTN_fake_script() -- UltraFpsBoost.LocalScript 
 	local script = Instance.new('LocalScript', UltraFpsBoost)
 
 	local Workspace = game:GetService("Workspace")
@@ -1148,8 +1148,8 @@ local function LPOHG_fake_script() -- UltraFpsBoost.LocalScript
 	end)
 	
 end
-coroutine.wrap(LPOHG_fake_script)()
-local function HSTTGIO_fake_script() -- World.Draggable 
+coroutine.wrap(XCTN_fake_script)()
+local function GPNFCM_fake_script() -- World.Draggable 
 	local script = Instance.new('LocalScript', World)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1192,8 +1192,8 @@ local function HSTTGIO_fake_script() -- World.Draggable
 	end)
 	
 end
-coroutine.wrap(HSTTGIO_fake_script)()
-local function ZLGDCK_fake_script() -- InfJump.LocalScript 
+coroutine.wrap(GPNFCM_fake_script)()
+local function IWDLQB_fake_script() -- InfJump.LocalScript 
 	local script = Instance.new('LocalScript', InfJump)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1243,8 +1243,8 @@ local function ZLGDCK_fake_script() -- InfJump.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZLGDCK_fake_script)()
-local function RXKMED_fake_script() -- Speed.LocalScript 
+coroutine.wrap(IWDLQB_fake_script)()
+local function KWDWWN_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	local Players = game:GetService("Players")
@@ -1304,17 +1304,14 @@ local function RXKMED_fake_script() -- Speed.LocalScript
 	end)
 	
 end
-coroutine.wrap(RXKMED_fake_script)()
-local function UENHX_fake_script() -- Autobuy.LocalScript 
+coroutine.wrap(KWDWWN_fake_script)()
+local function MBLUHEC_fake_script() -- Autobuy.LocalScript 
 	local script = Instance.new('LocalScript', Autobuy)
 
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
-	local Players = game:GetService("Players")
-	
 	local button = script.Parent
-	local LocalPlayer = Players.LocalPlayer
 	
-	-- Fetch network elements securely
+	-- Fetch the network remote structure safely with timeouts
 	local netManaged = ReplicatedStorage:WaitForChild("rbxts_include", 10)
 		:WaitForChild("node_modules", 10)
 		:WaitForChild("@rbxts", 10)
@@ -1324,19 +1321,6 @@ local function UENHX_fake_script() -- Autobuy.LocalScript
 	
 	local purchaseRemote = netManaged:WaitForChild("BedwarsPurchaseItem", 10)
 	
-	-- Safely load the game's actual Bedwars item data tracking rules via require
-	local itemUtilModule = ReplicatedStorage:WaitForChild("rbxts_include", 10)
-		:WaitForChild("node_modules", 10)
-		:WaitForChild("@easy-games", 10)
-		:WaitForChild("game-core", 10)
-		:WaitForChild("out", 10)
-		:WaitForChild("shared", 10)
-		:WaitForChild("util", 10)
-		:WaitForChild("item", 10)
-		:WaitForChild("item-util", 10)
-	
-	local BedwarsItemMeta = require(itemUtilModule).ItemUtil
-	
 	-- Create the thick black UI Stroke dynamically (Button Indicator)
 	local uiStroke = Instance.new("UIStroke")
 	uiStroke.Thickness = 4 
@@ -1345,34 +1329,11 @@ local function UENHX_fake_script() -- Autobuy.LocalScript
 	uiStroke.Enabled = false
 	uiStroke.Parent = button
 	
-	local isAutoBuyActive = false
+	local isAutoBuyEnabled = false
 	
-	-- Universal validation tool: looks directly at the game engine metadata to find your highest item tier
-	local function getCurrentToolTier(toolBaseType)
-		local highestTierFound = 0
-	
-		local function checkInventory(container)
-			if not container then return end
-			for _, item in ipairs(container:GetChildren()) do
-				-- Tap Bedwars item configurations directly to pull the true game data
-				local meta = BedwarsItemMeta.getStaticItemMeta(item.Name)
-				if meta and meta.tool and meta.tool.type == toolBaseType then
-					local tier = meta.tool.tier or 1
-					if tier > highestTierFound then
-						highestTierFound = tier
-					end
-				end
-			end
-		end
-	
-		checkInventory(LocalPlayer:FindFirstChild("Backpack"))
-		checkInventory(LocalPlayer.Character)
-		return highestTierFound
-	end
-	
-	-- Strictly cleaned network execution block 
+	-- Optimized, zero-error packet dispatcher
 	local function buy(itemName)
-		if not isAutoBuyActive then return end -- Mid-cycle optimization block
+		if not isAutoBuyEnabled then return end -- Instantly interrupt if turned off mid-cycle
 		pcall(function()
 			purchaseRemote:InvokeServer({
 				shopItem = {
@@ -1381,43 +1342,35 @@ local function UENHX_fake_script() -- Autobuy.LocalScript
 				shopId = "1_item_shop"
 			})
 		end)
-		task.wait(0.15)
+		task.wait(0.15) -- Tiny delay gives the server time to process transactions
 	end
 	
-	-- Asynchronous clean runtime execution thread
+	-- Asynchronous background worker loop
 	local function startAutoBuyLoop()
 		task.spawn(function()
-			while isAutoBuyActive do
-				-- == PRIORITY 1 & 2: WEAPONS AND ARMOR ==
+			while isAutoBuyEnabled do
+				-- PRIORITY 1: ARMOR
 				buy("leather_chestplate")
 				buy("iron_chestplate")
 				buy("diamond_chestplate")
 				buy("emerald_chestplate")
 	
+				-- PRIORITY 2: SWORDS
 				buy("stone_sword")
 				buy("iron_sword")
 				buy("diamond_sword")
 				buy("emerald_sword")
 	
-				-- == FALLBACK 3: PICKAXES ==
-				local currentPickTier = getCurrentToolTier("pickaxe")
-				if currentPickTier == 0 then
-					buy("stone_pickaxe")
-				elseif currentPickTier == 1 then
-					buy("iron_pickaxe")
-				elseif currentPickTier == 2 then
-					buy("diamond_pickaxe")
-				end
+				-- FALLBACK 3: PICKAXES
+				buy("stone_pickaxe")
+				buy("iron_pickaxe")
+				buy("diamond_pickaxe")
 	
-				-- == FALLBACK 4: AXES ==
-				local currentAxeTier = getCurrentToolTier("axe")
-				if currentAxeTier == 1 then
-					buy("stone_axe")
-				elseif currentAxeTier == 2 then
-					buy("iron_axe")
-				elseif currentAxeTier == 3 then
-					buy("diamond_axe")
-				end
+				-- FALLBACK 4: AXES
+				buy("wood_axe")
+				buy("stone_axe")
+				buy("iron_axe")
+				buy("diamond_axe")
 	
 				task.wait(1.5)
 			end
@@ -1426,9 +1379,9 @@ local function UENHX_fake_script() -- Autobuy.LocalScript
 	
 	-- Handle the button click to toggle states
 	button.MouseButton1Click:Connect(function()
-		isAutoBuyActive = not isAutoBuyActive
+		isAutoBuyEnabled = not isAutoBuyEnabled
 	
-		if isAutoBuyActive then
+		if isAutoBuyEnabled then
 			uiStroke.Enabled = true
 			startAutoBuyLoop()
 		else
@@ -1437,8 +1390,8 @@ local function UENHX_fake_script() -- Autobuy.LocalScript
 	end)
 	
 end
-coroutine.wrap(UENHX_fake_script)()
-local function URZDN_fake_script() -- ToggleButton.LocalScript 
+coroutine.wrap(MBLUHEC_fake_script)()
+local function CKTERXC_fake_script() -- ToggleButton.LocalScript 
 	local script = Instance.new('LocalScript', ToggleButton)
 
 	-- Place this LocalScript inside your TextButton
@@ -1498,4 +1451,4 @@ local function URZDN_fake_script() -- ToggleButton.LocalScript
 	button.MouseButton1Click:Connect(toggleMenu)
 	
 end
-coroutine.wrap(URZDN_fake_script)()
+coroutine.wrap(CKTERXC_fake_script)()
